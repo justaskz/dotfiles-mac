@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+${1:data} = read.csv('${2:path}', header=${3:F}, sep='${4:,}', stringsAsFactors=${5:F})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>read.csv</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.r</scope>
+</snippet>

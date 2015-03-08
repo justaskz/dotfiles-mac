@@ -1,0 +1,41 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Apache Pig",
+		"Better CoffeeScript",
+		"Coco R Syntax Highlighting",
+		"CoffeeScript",
+		"Color Highlighter",
+		"ColorSchemeSelector",
+		"Cython",
+		"Expand Selection to Quotes",
+		"FavoriteFiles",
+		"GotoTab",
+		"Hayaku - tools for writing CSS faster",
+		"HTML-CSS-JS Prettify",
+		"Jade",
+		"Julia",
+		"knitr",
+		"LaTeXing",
+		"LoremIpsum",
+		"Markdown Extended",
+		"Markdown Preview",
+		"orgmode",
+		"Package Control",
+		"PlainTasks",
+		"Ruby Slim",
+		"SCSS",
+		"Select Quoted",
+		"SideBarEnhancements",
+		"Stylus",
+		"SublimeERB",
+		"SublimeSBT",
+		"Text Pastry",
+		"Tmux",
+		"VimL",
+		"WordCount"
+	]
+}

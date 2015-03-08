@@ -1,0 +1,30 @@
+{
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Themes/Monokai.tmTheme",
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules",
+		"project"
+	],
+	"font_face": "Courier New",
+	"font_size": 17,
+	"ignored_packages":
+	[
+		"Coco R Syntax Highlighting",
+		"Vintage",
+		"Markdown Extended",
+		"Markdown Preview"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"/home/justas/repos/meteor-resume/.meteor*",
+		"/home/justas/repos/meteor-twitter-clone/.meteor/local*",
+		"/home/justas/repos/meteor-twatter/.meteor/local*",
+		"/home/justas/repos/meteor-famous/.meteor/local*"
+	],
+	"open_files_in_new_window": false,
+	"show_panel_on_build": true,
+	"trim_trailing_white_space_on_save": true
+}

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+//-----------------------------------------------
+// Test
+//-----------------------------------------------
+var assert = require('chai').assert
+
+describe('description', function() {
+  it('should do', function() {
+
+  })
+})
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>boiler-javascript</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

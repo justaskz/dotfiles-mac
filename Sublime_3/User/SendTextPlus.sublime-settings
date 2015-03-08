@@ -1,0 +1,42 @@
+{
+    // path to tmux and screen (linux/mac)
+    "tmux" : "tmux",
+    "screen" : "screen",
+
+    // syntax settings
+    "r" :
+    {
+        "prog" : "iTerm",
+        "block" : true,
+        "auto_advance" : true
+    },
+    "python" :
+    {
+        // "prog" : "Terminal",
+        "block" : true,
+        "auto_advance" : true
+    },
+    "julia" :
+    {
+        // "prog" : "Terminal",
+        "block" : true,
+        "auto_advance" : true
+    },
+
+    // default settings
+    "default":
+    {
+        "osx" : {
+            "prog" : "Terminal",
+            "auto_advance" : true
+        },
+        "linux" : {
+            "prog" : "tmux",
+            "auto_advance" : true
+        },
+        "windows" : {
+            "prog" : "PowerShell",
+            "auto_advance" : true
+        }
+    }
+}

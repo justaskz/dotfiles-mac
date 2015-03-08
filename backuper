@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+#################################################
+##
+## This script copies dotfiles and other things
+## to backup repo.
+##
+#################################################
+
+function create_folder {
+  mkdir -p "$BACKUP_FOLDER/dotfiles"
+  mkdir -p "$BACKUP_FOLDER/Sublime_3"
+}
+
+function backup_dotfiles {
+  cp $HOME/.vimrc $BACKUP_FOLDER/dotfiles
+  cp $HOME/.tmux.conf $BACKUP_FOLDER/dotfiles
+  cp $HOME/.bash_profile $BACKUP_FOLDER/dotfiles
+  cp $HOME/.bash_aliases $BACKUP_FOLDER/dotfiles
+  cp $HOME/.bash_env $BACKUP_FOLDER/dotfiles
+}
+
+function backup_sublime {
+  cp -r $SUBLIME/User $BACKUP_FOLDER/Sublime_3
+  cp -r $SUBLIME/Themes $BACKUP_FOLDER/Sublime_3
+}
+
+$@

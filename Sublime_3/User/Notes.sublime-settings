@@ -1,0 +1,5 @@
+{
+  "root": "~/repos/notes/main_notes/",
+  "color_scheme": "Packages/PlainNotes/Color Schemes/Sticky-Green.tmTheme",
+  "note_file_extensions": ["note", "md"]
+}

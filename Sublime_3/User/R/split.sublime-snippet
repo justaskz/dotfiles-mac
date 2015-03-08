@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+N = nrow(${1:data})
+ind = sample(N, N * .7)
+train = ${1:data}[ind, ]
+test = ${1:data}[-ind, ]
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>split</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.r</scope>
+</snippet>

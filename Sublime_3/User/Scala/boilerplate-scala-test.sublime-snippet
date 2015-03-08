@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+package com.codewars.${1:name}
+import org.scalatest.FunSpec
+
+class ${2:Name}Spec extends FunSpec {
+  describe("Adding 1 to 1") {
+    it("should equals 2") {
+      assert(1+1 == 2)
+    }
+  }
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>boiler-scala-test</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scala</scope>
+</snippet>

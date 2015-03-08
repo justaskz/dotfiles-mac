@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+write.table(${1:variable}, '${2:path}', col.names=${3:F}, row.names=${4:F}, sep='${5:,}', quote=${6:F})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>table.write</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.r</scope>
+</snippet>
