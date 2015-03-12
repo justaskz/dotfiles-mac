@@ -7,22 +7,34 @@
 ##
 #################################################
 
-function create_folder {
-  mkdir -p "$BACKUP_FOLDER/dotfiles"
-  mkdir -p "$BACKUP_FOLDER/Sublime_3"
+BACKUP_FOLDER="$HOME/repos/dotfiles-mac"
+
+function backup {
+  create_folders
+  backup_dotfiles
+  backup_sublime
+}
+
+function create_folders {
+  mkdir -p $BACKUP_FOLDER/dotfiles
+  mkdir -p $BACKUP_FOLDER/sublime_3
 }
 
 function backup_dotfiles {
-  cp $HOME/.vimrc $BACKUP_FOLDER/dotfiles
-  cp $HOME/.tmux.conf $BACKUP_FOLDER/dotfiles
-  cp $HOME/.bash_profile $BACKUP_FOLDER/dotfiles
-  cp $HOME/.bash_aliases $BACKUP_FOLDER/dotfiles
-  cp $HOME/.bash_env $BACKUP_FOLDER/dotfiles
+  FILES=('.vimrc' '.tmux.conf' '.bash_profile' '.bash_aliases' '.bash_env')
+
+  for file in "${FILES[@]}"; do
+    cp $HOME/$file $BACKUP_FOLDER/dotfiles
+  done
 }
 
 function backup_sublime {
   cp -r $SUBLIME/User $BACKUP_FOLDER/Sublime_3
   cp -r $SUBLIME/Themes $BACKUP_FOLDER/Sublime_3
+
+  rm -rf $BACKUP_FOLDER/Sublime_3/User/.DS_Store
+  rm -rf $BACKUP_FOLDER/Sublime_3/User/Package\ Control.cache
+  rm -rf $BACKUP_FOLDER/Sublime_3/User/Package\ Control.last-run
 }
 
 $@

@@ -10,7 +10,7 @@ function install_node {
   ./configure --prefix=$HOME/
   make install
 
-  # NPM
+  # NPM packages
   npm -g update
   npm -g install mocha
   npm -g install coffee-script

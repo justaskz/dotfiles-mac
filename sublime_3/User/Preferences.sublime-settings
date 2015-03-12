@@ -11,10 +11,8 @@
 	"font_size": 17,
 	"ignored_packages":
 	[
-		"Coco R Syntax Highlighting",
 		"Vintage",
-		"Markdown Extended",
-		"Markdown Preview"
+		"Coco R Syntax Highlighting"
 	],
 	"index_exclude_patterns":
 	[

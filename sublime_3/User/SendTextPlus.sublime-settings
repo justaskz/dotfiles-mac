@@ -1,7 +1,7 @@
 {
     // path to tmux and screen (linux/mac)
-    "tmux" : "tmux",
-    "screen" : "screen",
+    "tmux" : "/usr/local/bin/tmux",
+    // "screen" : "screen",
 
     // syntax settings
     "r" :
@@ -12,13 +12,13 @@
     },
     "python" :
     {
-        // "prog" : "Terminal",
+        "prog" : "iTerm",
         "block" : true,
         "auto_advance" : true
     },
     "julia" :
     {
-        // "prog" : "Terminal",
+        "prog" : "iTerm",
         "block" : true,
         "auto_advance" : true
     },
@@ -27,7 +27,7 @@
     "default":
     {
         "osx" : {
-            "prog" : "Terminal",
+            "prog" : "iTerm",
             "auto_advance" : true
         },
         "linux" : {

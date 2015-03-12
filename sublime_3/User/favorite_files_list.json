@@ -15,6 +15,11 @@
         "/Users/justas/repos/notes/main_notes/books.md",
         "/Users/justas/repos/notes/main_notes/links.org",
 
+        //-----------------------------------------------
+        // NOTES
+        //-----------------------------------------------
+        "/Users/justas/repos/notes/main_notes/dev notes/bash",
+
         // Dev
         "/Users/justas/repos/notes/war_of_editors/vim/commands",
         "/Users/justas/repos/notes/war_of_editors/vim/tmux",
@@ -31,6 +36,7 @@
         "/Users/justas/repos/notes/main_notes/dev notes/meteor",
         "/Users/justas/repos/notes/main_notes/dev notes/mongo",
         "/Users/justas/repos/notes/main_notes/dev notes/csvkit",
+        "/Users/justas/repos/notes/main_notes/dev notes/rails",
 
 
         "/Users/justas/repos/notes/main_notes/dev notes/git",

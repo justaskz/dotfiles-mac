@@ -7,7 +7,6 @@ function mk {
   mkdir -p $@ && cd $@
 }
 
-
 alias src="source ~/.bash_aliases"
 
 # Bookmarks
@@ -39,6 +38,18 @@ alias initspark="g8 nttdata-oss/basic-spark-project.g8"
 # alias n="node"
 # alias p="python"
 
+#################################################
+## RAILS
+#################################################
+alias rs="rails server"
+alias rc="rails console"
+alias rmigrate="rake db:migrate"
+alias rreset="rake db:reset"
+alias rtest="spring rspec"
+
+
+
+
 # meteor
 alias logs="meteor logs leakymirror.meteor.com"
 alias deploy="meteor deploy better-twatter.meteor.com"
@@ -64,6 +75,7 @@ alias gil="git log --graph --oneline --all"
 alias gill="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset' --all"
 alias gir="git pull --rebase"
 alias gib="git branch"
+alias gisl="git stash list"
 
 # vagrant
 alias vu="vagrant up"
