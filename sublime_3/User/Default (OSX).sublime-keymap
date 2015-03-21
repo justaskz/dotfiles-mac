@@ -56,10 +56,10 @@
   { "keys": ["command+shift+right"], "command": "move", "args": {
       "by": "word_ends", "forward": true, "extend": true }},
 
-  // Select between commas [Ctrl+Alt+up]
-  { "keys": ["command+shift+up"], "command": "select_quoted" },
-  // Select between brackets [Ctrl+Alt+down]
-  { "keys": ["command+shift+down"], "command": "expand_selection", "args": { "to": "brackets" }},
+  // Select between brackets [Ctrl+Alt+up]
+  { "keys": ["command+shift+up"], "command": "expand_selection", "args": { "to": "brackets" }},
+  // Select between commas [Ctrl+Alt+down]
+  { "keys": ["command+shift+down"], "command": "select_quoted" },
 
   // Expand multiple cursors up and down [Alt+Shift+up|down]: Works by default
 

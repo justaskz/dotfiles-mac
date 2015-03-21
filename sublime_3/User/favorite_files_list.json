@@ -5,11 +5,11 @@
         "/Users/justas/.bash_aliases",
         "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/favorite_files_list.json",
         "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-        "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX)_.sublime-keymap",
         "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Default (Linux).sublime-keymap",
         "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
         "/Users/justas/.vimrc",
         "/Users/justas/.tmux.conf",
+        "/Users/justas/.zshrc",
 
         // Productivity
         "/Users/justas/repos/notes/main_notes/books.md",
@@ -22,7 +22,7 @@
 
         // Dev
         "/Users/justas/repos/notes/war_of_editors/vim/commands",
-        "/Users/justas/repos/notes/war_of_editors/vim/tmux",
+        "/Users/justas/repos/notes/war_of_editors/vim/ztmux",
 
         "/Users/justas/repos/notes/main_notes/index.org",
         "/Users/justas/repos/notes/main_notes/dev notes/javascript",

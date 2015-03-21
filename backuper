@@ -8,6 +8,8 @@
 #################################################
 
 BACKUP_FOLDER="$HOME/repos/dotfiles-mac"
+SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
+SUBLIME="$HOME/Library/Application Support/Sublime Text 3/Packages"
 
 function backup {
   create_folders

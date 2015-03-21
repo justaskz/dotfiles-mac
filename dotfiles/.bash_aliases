@@ -1,6 +1,6 @@
 #!/bin/bash
 
-stty -ixon -ixoff
+# stty -ixon -ixoff
 
 
 function mk {
@@ -89,14 +89,15 @@ alias ds="dropbox status"
 
 # Path format
 # alias path_default="PS1='${debian_chroot:+($debian_chroot)}\[\033[00;34m\]\u@\h\[\033[00m\]:\[\033[00;35m\]\w\[\033[00m\]\$ '"
-alias defaultpath="PS1='\[\033[00;35m\]\w\[\033[00m\]\$ '"
-alias shortpath="PS1='${debian_chroot:+($debian_chroot)}\[\033[00;34m\]\$\[\033[00m\]:\[\033[00;35m\]\W\[\033[00m\] '"
-alias fullpath="PS1='${debian_chroot:+($debian_chroot)}\[\033[00;34m\]\u\[\033[00m\]@\[\033[00;31m\]\h\[\033[00m\]:\[\033[00;35m\]\w\[\033[00m\]\$ '"
+# alias defaultpath="PS1='\[\033[00;35m\]\w\[\033[00m\]\$ '"
+# alias shortpath="PS1='${debian_chroot:+($debian_chroot)}\[\033[00;34m\]\$\[\033[00m\]:\[\033[00;35m\]\W\[\033[00m\] '"
+# alias fullpath="PS1='${debian_chroot:+($debian_chroot)}\[\033[00;34m\]\u\[\033[00m\]@\[\033[00;31m\]\h\[\033[00m\]:\[\033[00;35m\]\w\[\033[00m\]\$ '"
 # alias shortpath_user="PS1='${debian_chroot:+($debian_chroot)}\[\033[00;34m\]\u\[\033[00m\]:\[\033[00;35m\]\W\[\033[00m\]\$ '"
 # alias fullpath_nouser="PS1='\[\033[00;35m\]\w\[\033[00m\]\$ '"
 
 # Set path format
-defaultpath
+# defaultpath
+alias srcz="source ~/.zshrc"
 
 # tmux
 alias tmc="tmux new -s"
@@ -112,4 +113,4 @@ export vw="data/vw"
 export temp="data/temp"
 export out="data/out"
 
-source ~/.bash_env
+# source ~/.bash_env
