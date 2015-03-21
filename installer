@@ -1,5 +1,41 @@
 #!/usr/bin/env bash
 
+function install {
+  transfer_dot_files
+  config_sublime
+}
+
+function transfer_dot_files {
+  rsync -r dotfiles/ $HOME
+  rm -f $HOME/hosts_bak
+  rm -f $HOME/REQUIRE
+
+  # instal Vundle
+  mkdir -p $HOME/.vim
+  git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
+
+  . $HOME/.bashrc
+}
+
+function config_sublime {
+  mkdir -p $HOME/.config/sublime-text-3/Packages
+  S3=$HOME/.config/sublime-text-3
+
+  S3_BACKUP=./sublime_3
+
+  # install Package Control
+  mkdir -p $S3/Installed\ Packages
+  wget -P $S3/Installed\ Packages http://sublime.wbond.net/Package%20Control.sublime-package
+
+  # move settings files
+  echo $S3_BACKUP/User
+  echo $S3/Packages/User
+
+  rsync -r $S3_BACKUP/User/ $S3/Packages/User/
+  rsync -r $BACKUP/Themes/ $S3/Packages/Themes/
+}
+
 mkdir -p $HOME/tmp
 
 function install_node {
