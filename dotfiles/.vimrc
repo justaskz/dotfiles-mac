@@ -1,11 +1,3 @@
-set guifont=Inconsolata\ for\ Powerline:h15
-let g:Powerline_symbols = 'fancy'
-set encoding=utf-8
-set t_Co=256
-set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
-set termencoding=utf-8
-
 "------------------------------------------------
 "                 BASIC SETTINGS
 "------------------------------------------------
@@ -19,7 +11,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-set number " show line numbers
+" show line numbers
+set number
 set nobackup
 set noswapfile
 
@@ -40,7 +33,7 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Plugins to install
@@ -66,12 +59,6 @@ filetype plugin indent on
 "------------------------------------------------
 "                    Navigation
 "------------------------------------------------
-
-" Select line Ctlr-e
-" Scroll up Ctrl-up
-" Scroll down Ctrl-down
-
-
 " Jump one word left Ctrl-left
 " Works out of the box
 " Jump one word right Ctrl-right
@@ -96,9 +83,6 @@ nnoremap <Esc>l $
 inoremap <Esc>l <Esc>$i
 inoremap <M-right> <Esc>$i
 
-" Exit Visual mode
-inoremap <Esc>i <Esc>
-
 " Select in line Shift-left
 " Visual mode
 " Select in line Shift-right
@@ -122,7 +106,8 @@ inoremap <C-s> <Esc>:w<CR>i
 "------------------------------------------------
 " Other
 "------------------------------------------------
-let g:slime_target = "tmux"
+" autocomplete
+inoremap <Tab> <C-p>
 
 " let g:ConqueTerm_SendVisKey = 'l'
 
@@ -133,12 +118,6 @@ let g:slime_target = "tmux"
 " Open r
 "nnoremap o <C-w>s<C-w>w:ConqueTerm R<CR>
 " nnoremap o :ConqueTerm R<CR>
-
-" Send line
-nmap rr <Plug>SlimeLineSend
-
-" Send file
-" nnoremap <Esc>r <F9>
 
 " refresh file
 nnoremap <Esc>re :e<CR>
@@ -153,5 +132,3 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" autocomplete
-inoremap <Tab> <C-p>

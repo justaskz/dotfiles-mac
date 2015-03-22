@@ -1,31 +1,26 @@
 #!/bin/bash
 
-# export BIN="$HOME/bin"
-# export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
+#################################################
+## OSX
+#################################################
+export BIN="$HOME/bin"
+export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
 
-# # Original PATH
-# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
-# PATH="$PATH:/usr/local/sbin"
-# PATH="$PATH:$HOME/bin"
+# Original PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
+PATH="$PATH:/usr/local/sbin"
+PATH="$PATH:$HOME/bin"
 
-# # RUBY THINGS
-# export RUBY_GC_HEAP_INIT_SLOTS=1000000
-# export RUBY_HEAP_SLOTS_INCREMENT=1000000
-# export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-# export RUBY_GC_MALLOC_LIMIT=1000000000
-# export RUBY_GC_HEAP_FREE_SLOTS=500000
-
-# bash-completion
-# if [ -f $(brew --prefix)/etc/bash_completion.d ]; then
-#   . $(brew --prefix)/etc/bash_completion.d
-# fi
-
-# if [ -f /usr/local/etc/bash_completion.d ]; then
-# . /usr/local/etc/bash_completion.d/git-completion.bash
-# fi
+# RUBY THINGS
+export RUBY_GC_HEAP_INIT_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_GC_HEAP_FREE_SLOTS=500000
 
 #################################################
 ## STUFF
 #################################################
-# PIP_BIN="/Users/justas/Library/Python/2.7/bin/"
-# PATH="$PATH:$PIP_BIN"
+
+PIP_BIN="/Users/justas/Library/Python/2.7/bin/"
+PATH="$PATH:$PIP_BIN"

@@ -9,12 +9,13 @@
 
 BACKUP_FOLDER="$HOME/repos/dotfiles-mac"
 SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
-SUBLIME="$HOME/Library/Application Support/Sublime Text 3/Packages"
+# SUBLIME="$HOME/Library/Application Support/Sublime Text 3/Packages"
 
 function backup {
   create_folders
   backup_dotfiles
   backup_sublime
+  backup_karabiner
 }
 
 function create_folders {
@@ -37,6 +38,10 @@ function backup_sublime {
   rm -rf $BACKUP_FOLDER/Sublime_3/User/.DS_Store
   rm -rf $BACKUP_FOLDER/Sublime_3/User/Package\ Control.cache
   rm -rf $BACKUP_FOLDER/Sublime_3/User/Package\ Control.last-run
+}
+
+function backup_karabiner {
+  /Applications/Karabiner.app/Contents/Library/bin/karabiner export > $BACKUP_FOLDER/presets/carabiner.sh
 }
 
 $@
