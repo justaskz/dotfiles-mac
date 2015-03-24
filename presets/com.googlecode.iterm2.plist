@@ -1742,7 +1742,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>274 283 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>71 11 1360 866 0 0 1440 877 </string>
+	<string>71 351 730 526 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>183 68 570 451 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_B70F104E-27C7-4792-8CF9-EA7ECA4327C0</key>
@@ -1907,11 +1907,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.11751551181077957</real>
+				<real>0.10980392247438431</real>
 				<key>Green Component</key>
-				<real>0.088423632085323334</real>
+				<real>0.10196078568696976</real>
 				<key>Red Component</key>
-				<real>0.089443325996398926</real>
+				<real>0.098039217293262482</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -2539,7 +2539,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-03-22T19:47:40Z</date>
+	<date>2015-03-23T19:48:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>

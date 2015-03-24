@@ -39,19 +39,9 @@ call vundle#begin()
 " Plugins to install
 Plugin 'gmarik/Vundle.vim'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'jpalardy/vim-slime' " Send text to tmux session
-Plugin 'bling/vim-airline' " VIM status line
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
-
-" Plugin 'oplatek/Conque-Shell'
-" Plugin 'MarcWeber/vim-addon-mw-utils'
-" Plugin 'tomtom/tlib_vim'
-" Plugin 'garbas/vim-snipmate'
 Plugin 'scrooloose/nerdtree'
-" Plugin 'terryma/vim-multiple-cursors'
-" Plugin 'vim-scripts/L9'
-" Plugin 'clones/vim-fuzzyfinder'
 
 call vundle#end()
 filetype plugin indent on
