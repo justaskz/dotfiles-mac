@@ -17,8 +17,7 @@ alias tms="tmux source-file ~/.tmux.conf"
 
 # git aliases
 alias gis="git status"
-alias gic="git commit -m"
-alias gica="git commit -am"
+alias gic="git checkout"
 alias gil="git log --graph --oneline --all"
 alias gill="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset' --all"
 alias gir="git pull --rebase"

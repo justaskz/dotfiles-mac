@@ -38,13 +38,18 @@ call vundle#begin()
 
 " Plugins to install
 Plugin 'gmarik/Vundle.vim'
-Plugin 'derekwyatt/vim-scala'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
+
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+map <C-n> :NERDTreeToggle<CR>
 
 "------------------------------------------------
 "                    Navigation
@@ -115,10 +120,3 @@ inoremap <Esc>re <Esc>:e<CR>i
 
 " open explorer
 nnoremap <Esc>e :Explore<CR>
-
-" switch splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-

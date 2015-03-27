@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-describe "${1:something}" do
+describe '${1:something}' do
   ${2:# code}
 end
 ]]></content>

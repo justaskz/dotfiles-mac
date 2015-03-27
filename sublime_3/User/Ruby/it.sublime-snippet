@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-it "should ${1:do}" do
+it 'should ${1:do}' do
   ${2:# code}
 end
 ]]></content>
