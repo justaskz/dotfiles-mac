@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
-it '${1:do}' do
+def ${1:do}
   ${2:# code}
 end
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>it</tabTrigger>
+	<tabTrigger>qf</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.ruby</scope>
 </snippet>

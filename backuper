@@ -8,8 +8,8 @@
 #################################################
 
 BACKUP_FOLDER="$HOME/repos/dotfiles-mac"
-# SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
-SUBLIME="$HOME/Library/Application Support/Sublime Text 3/Packages"
+SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
+# SUBLIME="$HOME/Library/Application Support/Sublime Text 3/Packages"
 
 function backup {
   create_folders
@@ -24,7 +24,7 @@ function create_folders {
 }
 
 function backup_dotfiles {
-  FILES=('.vimrc' '.tmux.conf' '.bash_profile' '.bash_aliases' '.bash_env')
+  FILES=('.vimrc' '.tmux.conf' '.bash_aliases' '.bash_env' '.zshrc')
 
   for file in "${FILES[@]}"; do
     cp $HOME/$file $BACKUP_FOLDER/dotfiles
@@ -36,7 +36,6 @@ function backup_sublime {
   mkdir -p $BACKUP_FOLDER/Sublime_3/User
 
   cp -r $SUBLIME/Themes $BACKUP_FOLDER/Sublime_3
-
 
   # copy all folders
   find $SUBLIME/User/* -type d -maxdepth 0 -exec cp -r {} $BACKUP_FOLDER/Sublime_3/User \;

@@ -11,8 +11,8 @@
 	"font_size": 17,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Coco R Syntax Highlighting"
+		"Coco R Syntax Highlighting",
+		"Vintage"
 	],
 	"index_exclude_patterns":
 	[

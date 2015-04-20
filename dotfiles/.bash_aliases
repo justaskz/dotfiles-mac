@@ -1,11 +1,13 @@
-#!/bin/bash
-source ~/.bash_env
+#!/usr/bin/env zsh
 
 function mk {
   mkdir -p $@ && cd $@
 }
 
-alias src="source ~/.bash_aliases"
+# alias src="source ~/.bash_aliases"
+alias src="source ~/.zshrc"
+
+alias r='eval "$(rbenv init - zsh)"'
 
 # tmux
 alias tmc="tmux new -s"
@@ -16,7 +18,8 @@ alias tml="tmux list-sessions"
 alias tms="tmux source-file ~/.tmux.conf"
 
 # git aliases
-alias gis="git status"
+alias gis="git status -s"
+alias giss="git status"
 alias gic="git checkout"
 alias gil="git log --graph --oneline --all"
 alias gill="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset' --all"
@@ -60,6 +63,7 @@ alias rc="rails console"
 alias rmigrate="rake db:migrate"
 alias rreset="rake db:reset"
 alias rtest="spring rspec"
+alias rtestag="spring rspec --tag selected -f d"
 
 
 alias js="julie single"
@@ -92,7 +96,6 @@ alias ds="dropbox status"
 
 # Set path format
 # defaultpath
-alias srcz="source ~/.zshrc"
 
 # for data projects
 export raw="data/raw"

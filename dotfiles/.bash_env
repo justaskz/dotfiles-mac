@@ -1,4 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env zsh
+
+#################################################
+## VINTED STUFF
+#################################################
+
+alias us_reset='COUNTRY=us bundle exec rake db:drop db:create db:structure:load db:seed'
+alias us_console='COUNTRY=us script/console'
+alias us_server='COUNTRY=us script/server'
+alias us_migrate='COUNTRY=us bundle exec rake db:migrate'
+alias us_images='COUNTRY=us script/rails s thin --port=3014'
 
 #################################################
 ## OSX
@@ -12,11 +22,14 @@ PATH="$PATH:/usr/local/sbin"
 PATH="$PATH:$HOME/bin"
 
 # RUBY THINGS
+PATH="$PATH:$HOME/.rbenv/bin"
+
 export RUBY_GC_HEAP_INIT_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_GC_HEAP_FREE_SLOTS=500000
+
 
 #################################################
 ## STUFF
@@ -24,3 +37,5 @@ export RUBY_GC_HEAP_FREE_SLOTS=500000
 
 PIP_BIN="/Users/justas/Library/Python/2.7/bin/"
 PATH="$PATH:$PIP_BIN"
+
+

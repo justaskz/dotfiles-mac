@@ -11,6 +11,9 @@
         "/Users/justas/.tmux.conf",
         "/Users/justas/.zshrc",
 
+        // Vinted
+        "/Users/justas/repos/notes/main_notes/vinted/tasks.org",
+
         // Productivity
         "/Users/justas/repos/notes/main_notes/books.md",
         "/Users/justas/repos/notes/main_notes/links.org",
@@ -33,6 +36,7 @@
         "/Users/justas/repos/notes/main_notes/stats notes/julia",
         "/Users/justas/repos/notes/main_notes/dev notes/scala ",
         "/Users/justas/repos/notes/main_notes/dev notes/python",
+        "/Users/justas/repos/notes/main_notes/dev notes/ruby",
         "/Users/justas/repos/notes/main_notes/dev notes/meteor",
         "/Users/justas/repos/notes/main_notes/dev notes/mongo",
         "/Users/justas/repos/notes/main_notes/dev notes/csvkit",
