@@ -69,7 +69,7 @@ alias rtestag="spring rspec --tag selected -f d"
 alias js="julie single"
 alias jss="julie start"
 
-# alias search="find * | grep -i"
+alias search="find * | grep -i"
 alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"
 alias psa="ps xw | grep"
 alias untar="tar xvzf"
