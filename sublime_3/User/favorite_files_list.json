@@ -12,11 +12,16 @@
         "/Users/justas/.zshrc",
 
         // Vinted
-        "/Users/justas/repos/notes/main_notes/vinted/tasks.org",
+        "/Users/justas/repos/vinted-notes/tasks.org",
+        "/Users/justas/repos/vinted-notes/notes.org",
+        "/Users/justas/repos/vinted-notes/snippets.rb",
+        "/Users/justas/repos/vinted-notes/links.org",
+        "/Users/justas/repos/vinted-notes/logins.org",
+        "/Users/justas/repos/vinted-notes/queries.sql",
 
         // Productivity
         "/Users/justas/repos/notes/main_notes/books.md",
-        "/Users/justas/repos/notes/main_notes/links.org",
+        // "/Users/justas/repos/notes/main_notes/links.org",
 
         //-----------------------------------------------
         // NOTES
@@ -47,11 +52,12 @@
         "/Users/justas/repos/notes/main_notes/dev notes/RegEx.md",
         "/Users/justas/repos/notes/main_notes/dev notes/mongo.md",
         "/Users/justas/repos/notes/main_notes/dev notes/sqlite",
+        "/Users/justas/repos/notes/main_notes/dev notes/mysql",
 
         "/Users/justas/repos/notes/main_notes/stats notes/tools.org",
         "/Users/justas/repos/notes/main_notes/career.org",
         "/Users/justas/Dropbox/Notes/global notes.txt",
-        "/Users/justas/repos/node-practise/codewars-katas/katas.org",
+        "/Users/justas/repos/node-practice/codewars-katas/katas.org",
 
         "/Users/justas/repos/notes/war_of_editors/text-editor-spec.md",
 

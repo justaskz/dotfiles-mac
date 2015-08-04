@@ -1,6 +1,6 @@
 {
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Themes/Monokai.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"folder_exclude_patterns":
 	[
 		".git",
@@ -8,7 +8,7 @@
 		"project"
 	],
 	"font_face": "Courier New",
-	"font_size": 17,
+	"font_size": 19,
 	"ignored_packages":
 	[
 		"Coco R Syntax Highlighting",
@@ -23,6 +23,7 @@
 		"/home/justas/repos/meteor-famous/.meteor/local*"
 	],
 	"open_files_in_new_window": false,
+	"save_on_focus_lost": true,
 	"show_panel_on_build": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,

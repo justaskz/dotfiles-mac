@@ -21,12 +21,14 @@ alias tms="tmux source-file ~/.tmux.conf"
 alias gis="git status -s"
 alias giss="git status"
 alias gic="git checkout"
-alias gil="git log --graph --oneline --all"
-alias gill="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset' --all"
-alias gir="git pull --rebase"
+alias gil="git log"
+alias gill="git log --graph --oneline --all"
+alias gilll="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset' --all"
+alias gir="git reset HEAD^"
 alias gib="git branch"
-alias gisl="git stash list"
 
+alias gifp="git push -f origin HEAD"
+alias gisave="git add .; git commit -m foo"
 
 # bookmarks
 alias h="cd ~"
@@ -64,7 +66,7 @@ alias rmigrate="rake db:migrate"
 alias rreset="rake db:reset"
 alias rtest="spring rspec"
 alias rtestag="spring rspec --tag selected -f d"
-
+alias lint="scss-lint | grep order"
 
 alias js="julie single"
 alias jss="julie start"
