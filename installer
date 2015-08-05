@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 function install {
+  #brew install wget
+
   transfer_dot_files
   config_sublime
 }
@@ -11,16 +13,17 @@ function transfer_dot_files {
   rm -f $HOME/REQUIRE
 
   # instal Vundle
-  mkdir -p $HOME/.vim
-  git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-  vim +PluginInstall +qall
+  # mkdir -p $HOME/.vim
+  # git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+  # vim +PluginInstall +qall
 
-  . $HOME/.bashrc
+  # . $HOME/.bashrc
+  # source $HOME/.zshrc
 }
 
 function config_sublime {
-  mkdir -p $HOME/.config/sublime-text-3/Packages
-  S3=$HOME/.config/sublime-text-3
+  mkdir -p "$HOME/Library/Application Support/Sublime Text 3"
+  S3="$HOME/Library/Application Support/Sublime Text 3"
 
   S3_BACKUP=./sublime_3
 
@@ -33,7 +36,7 @@ function config_sublime {
   echo $S3/Packages/User
 
   rsync -r $S3_BACKUP/User/ $S3/Packages/User/
-  rsync -r $BACKUP/Themes/ $S3/Packages/Themes/
+  # rsync -r $BACKUP/Themes/ $S3/Packages/Themes/
 }
 
 mkdir -p $HOME/tmp
