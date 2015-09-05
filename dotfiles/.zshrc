@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-
 source $HOME/.bash_aliases
 source $HOME/.bash_env
 
@@ -16,7 +15,8 @@ KEYTIMEOUT=.1
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="custom-theme"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -60,7 +60,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/Users/justas/bin:/Users/justas/Library/Python/2.7/bin/"
+# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/Users/justas/bin:/Users/justas/Library/Python/2.7/bin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

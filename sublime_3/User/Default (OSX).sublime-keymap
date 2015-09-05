@@ -170,8 +170,8 @@
   //-----------------------------------------------
   // SIDEBAR
   //-----------------------------------------------
-  // Toogle sidebar
   { "keys": ["command+o"], "command": "false" }, // disable open file
+  // Toogle sidebar
   { "keys": ["command+space", "command+o"], "command": "toggle_side_bar" },
   // Focus sidebar
   { "keys": ["command+space", "command+d"], "command": "focus_side_bar" },

@@ -1,6 +1,6 @@
 {
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"folder_exclude_patterns":
 	[
 		".git",
@@ -11,8 +11,8 @@
 	"font_size": 19,
 	"ignored_packages":
 	[
-		"Coco R Syntax Highlighting",
-		"Vintage"
+		"Vintage",
+		"Coco R Syntax Highlighting"
 	],
 	"index_exclude_patterns":
 	[

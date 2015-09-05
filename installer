@@ -1,60 +1,72 @@
 #!/usr/bin/env bash
 
-function install {
-  #brew install wget
+function install_essentials {
+  mkdir -p "$HOME/bin"
+  mkdir -p "$HOME/tmp"
 
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  brew install wget
+  brew install tmux
+  brew install reattach-to-user-namespace
+}
+
+function install {
   transfer_dot_files
   config_sublime
 }
 
 function transfer_dot_files {
-  rsync -r dotfiles/ $HOME
+  # transfer files
+  rsync -r ./dotfiles/ $HOME
+
   rm -f $HOME/hosts_bak
   rm -f $HOME/REQUIRE
 
-  # instal Vundle
-  # mkdir -p $HOME/.vim
-  # git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-  # vim +PluginInstall +qall
+  # setup vim
+  mkdir -p "$HOME/.vim"
+  git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
 
-  # . $HOME/.bashrc
-  # source $HOME/.zshrc
+  source $HOME/.zshrc
 }
 
-function config_sublime {
-  mkdir -p "$HOME/Library/Application Support/Sublime Text 3"
-  S3="$HOME/Library/Application Support/Sublime Text 3"
+function setup_sublime {
+  S3="$HOME/Library/Application*Support/Sublime*Text*3"
+  mkdir -p "$S3"
 
-  S3_BACKUP=./sublime_3
+  S3_BACKUP="$HOME/repos/dotfiles-mac/sublime_3"
 
   # install Package Control
-  mkdir -p $S3/Installed\ Packages
-  wget -P $S3/Installed\ Packages http://sublime.wbond.net/Package%20Control.sublime-package
+  PACKAGE_CONTROL="$S3/Installed Packages"
+  mkdir -p "$PACKAGE_CONTROL"
+  wget -P "$PACKAGE_CONTROL" "http://sublime.wbond.net/Package%20Control.sublime-package"
 
   # move settings files
-  echo $S3_BACKUP/User
-  echo $S3/Packages/User
+  rsync -r "$S3_BACKUP/User/" "$S3/Packages/User/"
+  rsync -r "$S3_BACKUP/Themes/" "$S3/Packages/Themes/"
 
-  rsync -r $S3_BACKUP/User/ $S3/Packages/User/
-  # rsync -r $BACKUP/Themes/ $S3/Packages/Themes/
+  # make callable from command line
+  ln -s "/Applications/Sublime*Text.app/Contents/SharedSupport/bin/subl" "$HOME/bin/subl"
 }
 
-mkdir -p $HOME/tmp
+function setup_iterm {
+  cp ./presets/com.googlecode.iterm2.plist $HOME/Library/Preferences/
 
-function install_node {
-  rm -rf $HOME/tmp/nodejs
-  mkdir -p $HOME/tmp/nodejs
-  cd $HOME/tmp/nodejs
-  curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
-  ./configure --prefix=$HOME/
-  make install
+  # install zsh
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+}
 
-  # NPM packages
-  npm -g update
-  npm -g install mocha
-  npm -g install coffee-script
-  npm -g install http-server
-  npm -g install supervisor
+function setup_zsh {
+  wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+  wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+
+  mkdir -p ~/.fonts
+  mv PowerlineSymbols.otf ~/.fonts/
+  fc-cache -vf ~/.fonts/
+
+  mkdir -p ~/.config/fontconfig/conf.d/
+  mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 }
 
 $@

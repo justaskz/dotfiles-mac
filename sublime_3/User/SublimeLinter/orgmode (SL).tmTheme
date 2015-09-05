@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Monokai</string>
+	<string>Monokai Bright</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -20,25 +20,29 @@
 				<key>lineHighlight</key>
 				<string>#3E3D32</string>
 				<key>selection</key>
-				<string>#49483E</string>
+				<string>#9D550F</string>
+				<key>selectionForeground</key>
+				<string>#fffff8</string>
+				<key>inactiveSelection</key>
+				<string>#bbbbbb</string>
+				<key>inactiveSelectionForeground</key>
+				<string>#222222</string>
 				<key>findHighlight</key>
 				<string>#FFE792</string>
 				<key>findHighlightForeground</key>
 				<string>#000000</string>
-				<key>selectionBorder</key>
-				<string>#222218</string>
 				<key>activeGuide</key>
 				<string>#9D550FB0</string>
 
 				<key>bracketsForeground</key>
-				<string>#FF8000</string>
+				<string>#F8F8F2A5</string>
 				<key>bracketsOptions</key>
-				<string>foreground</string>
+				<string>underline</string>
 
 				<key>bracketContentsForeground</key>
-				<string>#FF8000</string>
+				<string>#F8F8F2A5</string>
 				<key>bracketContentsOptions</key>
-				<string>foreground</string>
+				<string>underline</string>
 
 				<key>tagsOptions</key>
 				<string>stippled_underline</string>
@@ -77,7 +81,6 @@
 				<string>#AE81FF</string>
 			</dict>
 		</dict>
-
 		<dict>
 			<key>name</key>
 			<string>Built-in constant</string>
@@ -143,7 +146,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string />
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#66D9EF</string>
 			</dict>
@@ -169,7 +172,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string> underline</string>
+				<string>italic underline</string>
 				<key>foreground</key>
 				<string>#A6E22E</string>
 			</dict>
@@ -195,7 +198,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string />
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#FD971F</string>
 			</dict>
@@ -260,7 +263,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string />
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#66D9EF</string>
 			</dict>
@@ -379,8 +382,109 @@
 				<string>#E6DB74</string>
 			</dict>
 		</dict>
-
-	<dict>
+		<dict>
+            <key>name</key>
+            <string>orgmode link</string>
+            <key>scope</key>
+            <string>orgmode.link</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#FB9A4B</string>
+              <key>fontStyle</key>
+              <string>underline</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode page</string>
+            <key>scope</key>
+            <string>orgmode.page</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#FFFFAA</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode break</string>
+            <key>scope</key>
+            <string>orgmode.break</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#FFAAAA</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode headline</string>
+            <key>scope</key>
+            <string>orgmode.headline</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#9EFFFF</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode tack</string>
+            <key>scope</key>
+            <string>orgmode.tack</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#FFFFAA</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode follow up</string>
+            <key>scope</key>
+            <string>orgmode.follow_up</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#FFFFAA</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode checkbox</string>
+            <key>scope</key>
+            <string>orgmode.checkbox</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#FFFFAA</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode checkbox summary</string>
+            <key>scope</key>
+            <string>orgmode.checkbox.summary</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#FFFFAA</string>
+           </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>orgmode tags</string>
+            <key>scope</key>
+            <string>orgmode.tags</string>
+            <key>settings</key>
+            <dict>
+              <key>foreground</key>
+              <string>#AAFFAA</string>
+           </dict>
+        </dict>
+    
+    <dict>
             <key>name</key>
             <string>SublimeLinter Error</string>
             <key>scope</key>
@@ -412,6 +516,9 @@
             </dict>
         </dict></array>
 	<key>uuid</key>
-	<string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>
+	<string>D8D5E82E-3D5B-46B5-B38E-8C841C21347E</string>
+       
 </dict>
+
+
 </plist>

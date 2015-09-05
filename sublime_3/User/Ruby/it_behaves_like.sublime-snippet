@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-it_behaves_like '${1:name}', ${2:expected_result}
+it_behaves_like '${1:name}'
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>it_behaves_like</tabTrigger>
