@@ -1,6 +1,7 @@
 {
+	"always_show_minimap_viewport": true,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/Bliss (SL).tmTheme",
 	"folder_exclude_patterns":
 	[
 		".git",
@@ -22,7 +23,10 @@
 		"/home/justas/repos/meteor-twatter/.meteor/local*",
 		"/home/justas/repos/meteor-famous/.meteor/local*"
 	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 2,
 	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
 	"save_on_focus_lost": true,
 	"show_panel_on_build": true,
 	"tab_size": 2,
