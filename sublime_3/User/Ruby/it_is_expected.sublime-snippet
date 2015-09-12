@@ -1,9 +1,9 @@
 <snippet>
   <content><![CDATA[
-expect(${1:subject}).to ${2:eq} ${3:expected}
+it { is_expected.to ${2:eq} ${3:expected} }
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>rexpect</tabTrigger>
+  <tabTrigger>ris_expected</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.ruby</scope>
 </snippet>
