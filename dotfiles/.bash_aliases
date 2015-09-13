@@ -67,6 +67,7 @@ alias rreset="rake db:reset"
 alias rtest="spring rspec"
 alias rtestag="spring rspec --tag selected -f d"
 alias lint="scss-lint | grep order"
+alias jtest="RAILS_ENV=test bundle exec rake spec:javascript SPEC=my_test"
 
 alias js="julie single"
 alias jss="julie start"

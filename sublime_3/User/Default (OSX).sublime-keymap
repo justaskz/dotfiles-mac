@@ -13,6 +13,8 @@
   //-----------------------------------------------
   // Select a line
   { "keys": ["command+e"], "command": "expand_selection", "args": { "to": "line" }},
+  // Go to line
+  { "keys": ["command+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
   //-----------------------------------------------
   // TABS SELECTION

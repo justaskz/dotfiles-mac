@@ -7,7 +7,7 @@ shared_examples '${1:name}' do
 end
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>rshared_examples</tabTrigger>
+  <tabTrigger>qshared_examples</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.ruby</scope>
 </snippet>
