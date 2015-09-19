@@ -13,6 +13,8 @@
 	"ignored_packages":
 	[
 		"Coco R Syntax Highlighting",
+		"CoffeeScript",
+		"Expand Selection to Quotes",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -30,6 +32,7 @@
 	"save_on_focus_lost": true,
 	"show_panel_on_build": true,
 	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

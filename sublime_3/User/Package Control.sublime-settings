@@ -1,6 +1,9 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"CoffeeScript",
+		"Expand Selection to Quotes"
 	],
 	"installed_packages":
 	[
@@ -53,6 +56,7 @@
 		"Text Pastry",
 		"Theme - Dark Material",
 		"Theme - Elementary",
+		"Theme - Soda",
 		"Theme - Spacegray",
 		"Tmux",
 		"VimL",
