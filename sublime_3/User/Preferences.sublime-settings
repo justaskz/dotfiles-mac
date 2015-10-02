@@ -1,11 +1,15 @@
 {
 	"always_show_minimap_viewport": true,
+	"auto_complete": true,
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/Color Highlighter/themes/Bliss (SL).tmTheme",
+	"copy_with_empty_selection": true,
+	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
 		".git",
 		"node_modules",
+		"bower_components",
 		"project"
 	],
 	"font_face": "Courier New",
@@ -20,11 +24,11 @@
 	"index_exclude_patterns":
 	[
 		"*.log",
-		"/home/justas/repos/meteor-resume/.meteor*",
-		"/home/justas/repos/meteor-twitter-clone/.meteor/local*",
-		"/home/justas/repos/meteor-twatter/.meteor/local*",
-		"/home/justas/repos/meteor-famous/.meteor/local*"
+		".gitkeep",
+		"node_modules",
+		"bower_components"
 	],
+	"index_files": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 2,
 	"open_files_in_new_window": false,
