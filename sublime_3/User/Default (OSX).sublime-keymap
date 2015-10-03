@@ -15,6 +15,8 @@
   { "keys": ["command+e"], "command": "expand_selection", "args": { "to": "line" }},
   // Go to line
   { "keys": ["command+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  // Copy file path to clipboard
+  { "keys": ["command+space", "command+c"], "command": "copy_path" },
 
   //-----------------------------------------------
   // TABS SELECTION
@@ -81,6 +83,7 @@
   // New line
   { "keys": ["command+enter"], "command": "run_macro_file", "args": {
       "file": "res://Packages/Default/Add Line.sublime-macro" }},
+  { "keys": ["command+space", "command+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
 
 
   //-----------------------------------------------
@@ -155,6 +158,7 @@
   // Go to document end
   { "keys": ["ctrl+shift+g", "ctrl+shift+g"], "command": "move_to", "args": { "to": "eof", "extend": false }},
 
+
   //-----------------------------------------------
   //
   // PLUGINS
@@ -164,7 +168,6 @@
   { "keys": ["command+space", "command+f"], "command": "select_favorite_file" },
   { "keys": ["command+\\"], "command": "send_text_plus" },
   // { "keys": ["ctrl+space","ctrl+]","ctrl+\\"], "command": "send_text_plus_change_dir" }
-
 
   { "keys": ["ctrl+shift+d"], "command": "goto_definition" },
   { "keys": ["ctrl+shift+r"], "command": "reveal_in_side_bar" },
