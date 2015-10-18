@@ -10,7 +10,8 @@
 		".git",
 		"node_modules",
 		"bower_components",
-		"project"
+		"project",
+		"tmp"
 	],
 	"font_face": "Courier New",
 	"font_size": 19,
@@ -18,7 +19,6 @@
 	[
 		"Coco R Syntax Highlighting",
 		"CoffeeScript",
-		"Expand Selection to Quotes",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -26,7 +26,8 @@
 		"*.log",
 		".gitkeep",
 		"node_modules",
-		"bower_components"
+		"bower_components",
+		"tmp"
 	],
 	"index_files": true,
 	"line_padding_bottom": 1,

@@ -2,8 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"CoffeeScript",
-		"Expand Selection to Quotes"
+		"CoffeeScript"
 	],
 	"installed_packages":
 	[

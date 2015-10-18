@@ -1,21 +1,11 @@
 #!/usr/bin/env bash
 
-function install_ruby {
-  brew install rbenv
-  brew install ruby-build
-
-  rbenv install -s 2.2.2
-  rbenv global 2.2.2
-  gem install bundler
-  rbenv rehash
-}
-
 function install_mysql {
   brew install mysql
   update_mysql_configuration
 }
 
-update_mysql_configuration() {
+function update_mysql_configuration() {
   MYSQL_DIR="/etc/mysql"
   MYSQL_CONFIG_FILE="${MYSQL_DIR}/my.cnf"
 

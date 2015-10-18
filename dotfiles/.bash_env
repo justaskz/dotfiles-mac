@@ -1,5 +1,31 @@
 #!/usr/bin/env zsh
 
+export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
+
+# Original PATH
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
+PATH="$PATH:/usr/local/sbin"
+# PATH="$PATH:$HOME/bin"
+
+# RUBY
+PATH="$PATH:$HOME/.rbenv/bin"
+PATH="$PATH:$HOME/.rbenv/shims"
+PATH="$PATH:$HOME/repos/dev-tools/bin"
+
+export RUBY_GC_HEAP_INIT_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_GC_HEAP_FREE_SLOTS=500000
+
+#################################################
+## STUFF
+#################################################
+PIP_BIN="/Users/justas/Library/Python/2.7/bin/"
+# PATH="$PATH:$PIP_BIN"
+
+export PATH
+
 #################################################
 ## VINTED STUFF
 #################################################
@@ -15,32 +41,3 @@ alias de_console='COUNTRY=de script/console'
 alias de_server='COUNTRY=de script/server'
 alias de_migrate='COUNTRY=de bundle exec rake db:migrate'
 alias de_images='COUNTRY=de script/rails s thin --port=3014'
-
-#################################################
-## OSX
-#################################################
-export BIN="$HOME/bin"
-export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
-
-# Original PATH
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
-PATH="$PATH:/usr/local/sbin"
-PATH="$PATH:$HOME/bin"
-
-# RUBY THINGS
-PATH="$PATH:$HOME/.rbenv/bin"
-PATH="$PATH:$HOME/repos/dev-tools/bin"
-
-export RUBY_GC_HEAP_INIT_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=1000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_GC_HEAP_FREE_SLOTS=500000
-
-#################################################
-## STUFF
-#################################################
-PIP_BIN="/Users/justas/Library/Python/2.7/bin/"
-PATH="$PATH:$PIP_BIN"
-
-export PATH
