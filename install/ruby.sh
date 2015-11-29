@@ -2,8 +2,6 @@
 
 function install_rbenv {
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-  rbenv rehash
-
   brew install ruby-build
 }
 

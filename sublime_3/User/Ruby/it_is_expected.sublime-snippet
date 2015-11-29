@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-it { is_expected.to ${2:eq} ${3:expected} }
+it { is_expected.to ${2:eq}(${3:expected}) }
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>qis_expected</tabTrigger>
