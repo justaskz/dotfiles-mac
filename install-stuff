@@ -10,7 +10,7 @@ function update_mysql_configuration() {
   MYSQL_CONFIG_FILE="${MYSQL_DIR}/my.cnf"
 
   if [ -e "$MYSQL_CONFIG_FILE" ]; then
-    success "MySQL already configured"
+    echo "MySQL already configured"
     return
   fi
 
@@ -59,4 +59,6 @@ function install_node {
   npm -g install http-server
   npm -g install supervisor
 }
+
+$@
 

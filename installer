@@ -31,25 +31,6 @@ function transfer_dot_files {
   source $HOME/.zshrc
 }
 
-function setup_sublime {
-  S3="$HOME/Library/Application*Support/Sublime*Text*3"
-  mkdir -p "$S3"
-
-  S3_BACKUP="$HOME/repos/dotfiles-mac/sublime_3"
-
-  # install Package Control
-  PACKAGE_CONTROL="$S3/Installed Packages"
-  mkdir -p "$PACKAGE_CONTROL"
-  wget -P "$PACKAGE_CONTROL" "http://sublime.wbond.net/Package%20Control.sublime-package"
-
-  # move settings files
-  rsync -r "$S3_BACKUP/User/" "$S3/Packages/User/"
-  rsync -r "$S3_BACKUP/Themes/" "$S3/Packages/Themes/"
-
-  # make callable from command line
-  ln -s "/Applications/Sublime*Text.app/Contents/SharedSupport/bin/subl" "$HOME/bin/subl"
-}
-
 function setup_iterm {
   cp ./presets/com.googlecode.iterm2.plist $HOME/Library/Preferences/
 
