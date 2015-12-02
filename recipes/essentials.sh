@@ -11,7 +11,7 @@ function install {
   brew install wget
 
   # copy dotfiles
-  rsync -r ./dotfiles/ $HOME
+  rsync -r ../dotfiles/ $HOME
 }
 
 $@

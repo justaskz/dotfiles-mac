@@ -16,7 +16,8 @@ function install {
   rsync -r "$BACKUP_PATH/Themes/" "$SUBLIME_PATH/Packages/Themes/"
 
   # make callable from command line
-  ln -s "/Applications/Sublime%20Text.app/Contents/SharedSupport/bin/subl" "$HOME/bin/subl"
+  rm -rf "$HOME/bin/subl"
+  ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "$HOME/bin/subl"
 }
 
 $@
