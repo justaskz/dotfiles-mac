@@ -8,6 +8,7 @@
 	[
 		"All Autocomplete",
 		"Apache Pig",
+		"Bats (Bash Automated Testing System)",
 		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Coco R Syntax Highlighting",
@@ -19,6 +20,7 @@
 		"Emmet",
 		"Expand Selection to Quotes",
 		"FavoriteFiles",
+		"GhostText",
 		"Git",
 		"GitGutter",
 		"GotoTab",

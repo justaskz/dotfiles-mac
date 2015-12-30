@@ -5,11 +5,10 @@ export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
 # Original PATH
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
 PATH="$PATH:/usr/local/sbin"
-# PATH="$PATH:$HOME/bin"
+PATH="$PATH:$HOME/bin"
 
 # RUBY
 PATH="$PATH:$HOME/.rbenv/bin"
-PATH="$PATH:$HOME/.rbenv/shims"
 PATH="$PATH:$HOME/repos/dev-tools/bin"
 
 export RUBY_GC_HEAP_INIT_SLOTS=1000000
@@ -23,6 +22,9 @@ export RUBY_GC_HEAP_FREE_SLOTS=500000
 #################################################
 PIP_BIN="/Users/justas/Library/Python/2.7/bin/"
 # PATH="$PATH:$PIP_BIN"
+
+TMUX_PATH="$HOME/tmux"
+PATH="$PATH:$TMUX_PATH"
 
 export PATH
 

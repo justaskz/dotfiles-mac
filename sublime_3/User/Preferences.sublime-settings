@@ -2,7 +2,7 @@
 	"always_show_minimap_viewport": true,
 	"auto_complete": true,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/Color Highlighter/themes/Bliss (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
