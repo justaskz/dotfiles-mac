@@ -1,5 +1,6 @@
 function install {
   brew install cmake
+  brew install Caskroom/cask/java
   brew install elasticsearch
   brew install geoip
   brew install imagemagick
@@ -15,3 +16,5 @@ function install {
   brew install sphinx
   brew install v8
 }
+
+$@
