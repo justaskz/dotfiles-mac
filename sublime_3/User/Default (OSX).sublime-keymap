@@ -202,19 +202,7 @@
   { "keys": ["command+ctrl+2"], "command": "set_layout", "args": {
     "cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] }},
   { "keys": ["command+ctrl+3"], "command": "set_layout", "args": {
-    "cols": [0.0, 0.33, 0.66, 1.0], "rows": [0.0, 1.0], "cells":
-    [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]] }},
-  { "keys": ["command+ctrl+4"], "command": "set_layout", "args": {
-    "cols": [0.0, 0.25, 0.5, 0.75, 1.0], "rows": [0.0, 1.0], "cells":
-    [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]] }},
-  { "keys": ["command+ctrl+8"], "command": "set_layout", "args": {
     "cols": [0.0, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2]] }},
-  { "keys": ["command+ctrl+9"], "command": "set_layout", "args": {
-    "cols": [0.0, 1.0], "rows": [0.0, 0.33, 0.66, 1.0], "cells":
-    [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]] }},
-  { "keys": ["command+ctrl+5"], "command": "set_layout", "args": {
-    "cols": [0.0, 0.5, 1.0], "rows": [0.0, 0.5, 1.0], "cells":
-    [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2]] }},
 
   // Focus the group
   { "keys": ["command+space", "command+left"], "command": "focus_group", "args": { "group": 0 }},

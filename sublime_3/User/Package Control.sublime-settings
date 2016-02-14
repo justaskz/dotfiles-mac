@@ -29,6 +29,7 @@
 		"Hayaku - tools for writing CSS faster",
 		"HTML-CSS-JS Prettify",
 		"HTML2Slim",
+		"IPython Notebook",
 		"Jade",
 		"Javascript Beautify",
 		"Julia",
@@ -43,6 +44,7 @@
 		"PlainTasks",
 		"Pretty JSON",
 		"RailsGoToSpec",
+		"Riot Tag",
 		"RuboCop",
 		"Ruby Slim",
 		"Select Quoted",
@@ -60,6 +62,7 @@
 		"Theme - Soda",
 		"Tmux",
 		"VimL",
+		"Vue Syntax Highlight",
 		"WordCount"
 	]
 }

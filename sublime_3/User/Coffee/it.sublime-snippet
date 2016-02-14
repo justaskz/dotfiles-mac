@@ -1,10 +1,10 @@
 <snippet>
     <content><![CDATA[
-it 'should ${1:do}', ->
+it '${1:do}', ->
   ${2:# code}
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>it</tabTrigger>
+    <tabTrigger>qit</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.coffee</scope>
 </snippet>

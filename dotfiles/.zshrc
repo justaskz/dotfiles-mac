@@ -1,12 +1,22 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 source $HOME/.bash_aliases
 source $HOME/.bash_env
 
+#################################################
+## MISC
+#################################################
+
+# environmebt mount
 eval "$(rbenv init - zsh)"
+eval "$(pyenv init -)"
 
 # makes VIM work with ctrl
 stty -ixon -ixoff
+
+#################################################
+## ZSH CONFIG
+#################################################
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh

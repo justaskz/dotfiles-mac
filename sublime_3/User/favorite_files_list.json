@@ -23,6 +23,7 @@
         // Productivity
         "/Users/justas/repos/notes/main_notes/books.md",
         // "/Users/justas/repos/notes/main_notes/links.org",
+        "/Users/justas/repos/notes/main_notes/services.org",
 
         //-----------------------------------------------
         // NOTES
@@ -73,6 +74,7 @@
         "/Users/justas/repos/notes/config/install_aws.sh",
         "/Users/justas/repos/notes/main_notes/sublime.md",
         "/Users/justas/repos/notes/main_notes/sublime3.md",
+        "/tmp/output.sql",
     ],
     "groups": {
         "qqqq": [

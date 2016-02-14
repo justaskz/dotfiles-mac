@@ -4,7 +4,7 @@ describe '${1:description}', ->
   ${2:# code}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>describe</tabTrigger>
+	<tabTrigger>qdescribe</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.coffee</scope>
 </snippet>

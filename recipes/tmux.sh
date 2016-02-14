@@ -18,4 +18,12 @@ function install_old_version {
   ./configure && make
 }
 
+function cpu_monitor {
+  git clone git@github.com:thewtex/tmux-mem-cpu-load.git $HOME/repos
+  cd $HOME/repos/tmux-mem-cpu-load
+  cmake .
+  make
+  make install
+}
+
 $@

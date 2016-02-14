@@ -1,13 +1,15 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
-export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
+#################################################
+## GLOBAL
+#################################################
+export BIN=$HOME/bin
+export OPT=$HOME/opt
+export TMP=$HOME/tmp
 
-# Original PATH
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
-PATH="$PATH:/usr/local/sbin"
-PATH="$PATH:$HOME/bin"
-
-# RUBY
+#################################################
+## RUBY
+#################################################
 PATH="$PATH:$HOME/.rbenv/bin"
 PATH="$PATH:$HOME/repos/dev-tools/bin"
 
@@ -18,28 +20,22 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_GC_HEAP_FREE_SLOTS=500000
 
 #################################################
-## STUFF
+## SUBLIME
 #################################################
-PIP_BIN="/Users/justas/Library/Python/2.7/bin/"
-# PATH="$PATH:$PIP_BIN"
+export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
 
-TMUX_PATH="$HOME/tmux"
-PATH="$PATH:$TMUX_PATH"
+#################################################
+## PATH
+#################################################
+
+# Original PATH
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
+PATH="$PATH:$HOME/bin"
+
+SPARK_HOME=$OPT/spark
+PATH="$PATH:$SPARK_HOME/bin"
+
+SHPEC_HOME=$OPT/shpec
+PATH="$PATH:$SHPEC_HOME/bin"
 
 export PATH
-
-#################################################
-## VINTED STUFF
-#################################################
-
-alias us_reset='COUNTRY=us bundle exec rake db:drop db:create db:structure:load db:seed'
-alias us_console='COUNTRY=us script/console'
-alias us_server='COUNTRY=us script/server'
-alias us_migrate='COUNTRY=us bundle exec rake db:migrate'
-alias us_images='COUNTRY=us script/rails s thin --port=3014'
-
-alias de_reset='COUNTRY=de bundle exec rake db:drop db:create db:structure:load db:seed'
-alias de_console='COUNTRY=de script/console'
-alias de_server='COUNTRY=de script/server'
-alias de_migrate='COUNTRY=de bundle exec rake db:migrate'
-alias de_images='COUNTRY=de script/rails s thin --port=3014'

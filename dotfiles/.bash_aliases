@@ -1,8 +1,4 @@
-#!/usr/bin/env zsh
-
-function mk {
-  mkdir -p $@ && cd $@
-}
+#!/usr/bin/env bash
 
 alias src="source ~/.zshrc"
 

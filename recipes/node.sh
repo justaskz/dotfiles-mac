@@ -11,7 +11,6 @@ function install() {
   # NPM packages
   npm -g update
   npm -g install mocha
-  npm -g install coffee-script
   npm -g install http-server
   npm -g install supervisor
 }

@@ -1,9 +1,12 @@
 function install {
-  npm -g install bower
-  npm -g install coffee-script
-  npm -g install webpack
-  npm -g install webpack-dev-server
-  npm -g install watchman
+  npm install -g bower
+  npm install -g casperjs
+  npm install -g coffee-script
+  npm install -g jshint
+  npm install -g phantomjs
+  npm install -g watchman
+  npm install -g webpack
+  npm install -g webpack-dev-server
 
   gem install scss_lint
 }
