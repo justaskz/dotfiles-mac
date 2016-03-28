@@ -21,6 +21,16 @@
 				[
 				]
 			},
+			"eslint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"flake8":
 			{
 				"@disable": false,
@@ -75,7 +85,8 @@
 			],
 			"osx":
 			[
-				"/Users/justas/.rbenv/shims/"
+				"/Users/justas/.rbenv/shims/",
+				"/usr/local/bin/node"
 			],
 			"windows":
 			[
@@ -99,6 +110,7 @@
 		"show_marks_in_minimap": true,
 		"syntax_map":
 		{
+			"JavaScript (Babel)": "javascript",
 			"html (django)": "html",
 			"html (rails)": "html",
 			"html 5": "html",

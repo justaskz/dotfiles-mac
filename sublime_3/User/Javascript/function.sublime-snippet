@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-function${1:}(${2:}) {${3:  }}
+function${1:}(${2:}) {${3:  }};
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>qf</tabTrigger>

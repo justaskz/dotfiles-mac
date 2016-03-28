@@ -5,16 +5,23 @@
 	"color_scheme": "Packages/User/Color Highlighter/themes/Bliss (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.log",
+		".DS_Store",
+		"*.pyc"
+	],
 	"folder_exclude_patterns":
 	[
 		".git",
 		"node_modules",
 		"bower_components",
 		"project",
-		"tmp"
+		"tmp",
+		".sass-cache"
 	],
 	"font_face": "Courier New",
-	"font_size": 21,
+	"font_size": 20,
 	"ignored_packages":
 	[
 		"Coco R Syntax Highlighting",
@@ -34,6 +41,10 @@
 	"line_padding_top": 2,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		99
+	],
 	"save_on_focus_lost": true,
 	"show_panel_on_build": false,
 	"tab_size": 2,

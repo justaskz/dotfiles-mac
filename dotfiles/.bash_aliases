@@ -78,3 +78,18 @@ export raw="data/raw"
 export vw="data/vw"
 export temp="data/temp"
 export out="data/out"
+
+#################################################
+## VINTED STUFF
+#################################################
+alias us_reset='COUNTRY=us bundle exec rake db:drop db:create db:structure:load db:seed'
+alias us_console='COUNTRY=us script/console'
+alias us_server='COUNTRY=us script/server'
+alias us_migrate='COUNTRY=us bundle exec rake db:migrate'
+alias us_images='COUNTRY=us script/rails s thin --port=3014'
+
+alias de_reset='COUNTRY=de bundle exec rake db:drop db:create db:structure:load db:seed'
+alias de_console='COUNTRY=de script/console'
+alias de_server='COUNTRY=de script/server'
+alias de_migrate='COUNTRY=de bundle exec rake db:migrate'
+alias de_images='COUNTRY=de script/rails s thin --port=3014'

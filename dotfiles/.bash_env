@@ -10,9 +10,6 @@ export TMP=$HOME/tmp
 #################################################
 ## RUBY
 #################################################
-PATH="$PATH:$HOME/.rbenv/bin"
-PATH="$PATH:$HOME/repos/dev-tools/bin"
-
 export RUBY_GC_HEAP_INIT_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
@@ -32,10 +29,18 @@ export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
 PATH="$PATH:$HOME/bin"
 
+PATH="$PATH:$HOME/.rbenv/bin"
+PATH="$PATH:$HOME/repos/dev-tools/bin"
+
 SPARK_HOME=$OPT/spark
 PATH="$PATH:$SPARK_HOME/bin"
 
 SHPEC_HOME=$OPT/shpec
 PATH="$PATH:$SHPEC_HOME/bin"
 
+CLI_TOOLS_HOME=$HOME/repos/cli-tools
+PATH="$PATH:$CLI_TOOLS_HOME/bin"
+
 export PATH
+
+export PYTHONPATH="$HOME/repos/python-modules"
