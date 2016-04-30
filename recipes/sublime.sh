@@ -20,4 +20,8 @@ function install {
   ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "$HOME/bin/subl"
 }
 
+function install_ctags {
+  brew install ctags
+}
+
 $@

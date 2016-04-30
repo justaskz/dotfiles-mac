@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-VERSION=1.6.0
+
+VERSION=1.6.1
 URL="http://apache.mirror.vu.lt/apache/spark/spark-$VERSION/spark-$VERSION-bin-hadoop2.6.tgz"
 
 function install {

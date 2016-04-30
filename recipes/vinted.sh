@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 function install {
   brew install cmake
   brew install Caskroom/cask/java
