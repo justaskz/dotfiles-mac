@@ -25,6 +25,7 @@ alias gir="git reset HEAD^"
 alias gib="git branch"
 alias gifp="git push -f origin HEAD"
 alias gisave="git add .; git commit -m foo"
+alias giupdate="git add .; git commit --am; git push -f origin HEAD"
 
 #################################################
 ## TOOLS

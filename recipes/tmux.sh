@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 function install {
-  # brew install tmux
-  brew install reattach-to-user-namespace
-  brew install automake
-  install_old_version
+  brew install tmux
+  # brew install reattach-to-user-namespace
+  # brew install automake
+  # install_old_version
 }
 
 function install_old_version {

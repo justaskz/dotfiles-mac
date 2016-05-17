@@ -38,8 +38,11 @@ PATH="$PATH:$SPARK_HOME/bin"
 SHPEC_HOME="$OPT/shpec"
 PATH="$PATH:$SHPEC_HOME/bin"
 
+GNU_UTILS="/usr/local/opt/coreutils/libexec/gnubin"
+PATH="$GNU_UTILS:$PATH"
+
 CLI_TOOLS_HOME="$HOME/repos/cli-tools"
-PATH="$PATH:$CLI_TOOLS_HOME/bin"
+PATH="$CLI_TOOLS_HOME/bin:$PATH"
 
 JULIE_TEST_HOME="$HOME/.julia/v0.4/JulieTest"
 PATH="$PATH:$JULIE_TEST_HOME/bin"
@@ -47,6 +50,6 @@ PATH="$PATH:$JULIE_TEST_HOME/bin"
 VW_HOME="$OPT/vowpal_wabbit"
 PATH="$PATH:$VW_HOME/vowpalwabbit"
 
-export PATH
+# export PATH
 
 export PYTHONPATH="$HOME/repos/python-modules"

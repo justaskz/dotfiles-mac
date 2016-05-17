@@ -12,7 +12,8 @@
 		"*.pyc",
 		"*.cache",
 		".tags*",
-		"tags"
+		"tags",
+		"*.js.map"
 	],
 	"folder_exclude_patterns":
 	[

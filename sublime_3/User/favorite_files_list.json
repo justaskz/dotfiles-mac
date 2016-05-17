@@ -1,6 +1,8 @@
 {
     "files": [
-        // Config
+        //-----------------------------------------------
+        // CONFIG
+        //-----------------------------------------------
         "/Users/justas/.bash_env",
         "/Users/justas/.bash_aliases",
         "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/favorite_files_list.json",
@@ -10,6 +12,17 @@
         "/Users/justas/.vimrc",
         "/Users/justas/.tmux.conf",
         "/Users/justas/.zshrc",
+
+        //-----------------------------------------------
+        // NOTES
+        //-----------------------------------------------
+        "/Users/justas/repos/notes/reading_list.org",
+
+
+
+        //-----------------------------------------------
+        // DEPRECATED
+        //-----------------------------------------------
 
         // Vinted
         "/Users/justas/repos/vinted-notes/tasks.org",
@@ -42,6 +55,7 @@
         "/Users/justas/repos/notes/main_notes/stats_notes/vw",
         "/Users/justas/repos/notes/main_notes/stats_notes/old.R",
         "/Users/justas/repos/notes/main_notes/stats_notes/julia",
+        "/Users/justas/repos/notes/main_notes/stats_notes/matrix_algebra.org",
         "/Users/justas/repos/notes/main_notes/dev_notes/scala ",
         "/Users/justas/repos/notes/main_notes/dev_notes/python",
         "/Users/justas/repos/notes/main_notes/dev_notes/ruby",
