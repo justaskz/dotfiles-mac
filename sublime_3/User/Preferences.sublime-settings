@@ -9,7 +9,10 @@
 	[
 		"*.log",
 		".DS_Store",
-		"*.pyc"
+		"*.pyc",
+		"*.cache",
+		".tags*",
+		"tags"
 	],
 	"folder_exclude_patterns":
 	[
@@ -18,10 +21,11 @@
 		"bower_components",
 		"project",
 		"tmp",
-		".sass-cache"
+		".sass-cache",
+		"__pycache__"
 	],
 	"font_face": "Courier New",
-	"font_size": 20,
+	"font_size": 21,
 	"ignored_packages":
 	[
 		"Coco R Syntax Highlighting",

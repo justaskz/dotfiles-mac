@@ -5,3 +5,5 @@
 [user]
 	name = Justas Kazakauskas
 	email = justas.kazakauskas@vinted.com
+[core]
+	excludesfile = ~/.gitignore

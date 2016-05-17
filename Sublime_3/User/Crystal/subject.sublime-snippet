@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+subject(:${1:description}) { ${2:described_class} }
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>qsubject</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.crystal</scope>
+</snippet>

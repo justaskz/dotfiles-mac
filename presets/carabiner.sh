@@ -10,6 +10,8 @@ $cli set remap.KPReturn_to_Ctrl_O 1
 /bin/echo -n .
 $cli set remap.fn2commandL 1
 /bin/echo -n .
+$cli set remap.commandL2fn 1
+/bin/echo -n .
 $cli set remap.iso_swap_tilda_section 1
 /bin/echo -n .
 /bin/echo

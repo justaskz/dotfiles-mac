@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+let(:${1:name}) { ${2:create}(:${3:resource}) }
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>qlet</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.crystal</scope>
+</snippet>

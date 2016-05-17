@@ -73,12 +73,6 @@ alias books="cd ~/Dropbox/books"
 alias juliafolder="cd ~/.julia/v0.3"
 alias sublime="cd $SUBLIME"
 
-# for data projects
-export raw="data/raw"
-export vw="data/vw"
-export temp="data/temp"
-export out="data/out"
-
 #################################################
 ## VINTED STUFF
 #################################################

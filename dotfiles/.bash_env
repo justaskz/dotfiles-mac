@@ -32,14 +32,20 @@ PATH="$PATH:$HOME/bin"
 PATH="$PATH:$HOME/.rbenv/bin"
 PATH="$PATH:$HOME/repos/dev-tools/bin"
 
-SPARK_HOME=$OPT/spark
+SPARK_HOME="$OPT/spark"
 PATH="$PATH:$SPARK_HOME/bin"
 
-SHPEC_HOME=$OPT/shpec
+SHPEC_HOME="$OPT/shpec"
 PATH="$PATH:$SHPEC_HOME/bin"
 
-CLI_TOOLS_HOME=$HOME/repos/cli-tools
+CLI_TOOLS_HOME="$HOME/repos/cli-tools"
 PATH="$PATH:$CLI_TOOLS_HOME/bin"
+
+JULIE_TEST_HOME="$HOME/.julia/v0.4/JulieTest"
+PATH="$PATH:$JULIE_TEST_HOME/bin"
+
+VW_HOME="$OPT/vowpal_wabbit"
+PATH="$PATH:$VW_HOME/vowpalwabbit"
 
 export PATH
 
