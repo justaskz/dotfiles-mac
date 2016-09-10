@@ -1,4 +1,12 @@
 [
+
+
+  { "keys": ["ctrl+q"], "command": "select_highlighted_words", "context":
+    [ { "key": "selection_empty", "operator": "equal", "operand": false },
+      { "key": "setting.is_widget", "operator": "equal", "operand": false }
+    ]
+  },
+
   // Ctrl => Command
   // Alt => Alt
   // Shift => Shift

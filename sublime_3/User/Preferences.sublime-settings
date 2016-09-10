@@ -2,7 +2,7 @@
 	"always_show_minimap_viewport": true,
 	"auto_complete": true,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/Color Highlighter/themes/Bliss (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -13,7 +13,8 @@
 		"*.cache",
 		".tags*",
 		"tags",
-		"*.js.map"
+		"*.js.map",
+		"*.scssc"
 	],
 	"folder_exclude_patterns":
 	[
@@ -21,12 +22,18 @@
 		"node_modules",
 		"bower_components",
 		"project",
-		"tmp",
 		".sass-cache",
-		"__pycache__"
+		"__pycache__",
+		".crystal",
+		".shards",
+		"tmp/cache",
+		"webpack",
+		"tmp",
+		"libs",
+		"certs"
 	],
 	"font_face": "Courier New",
-	"font_size": 21,
+	"font_size": 22,
 	"ignored_packages":
 	[
 		"Coco R Syntax Highlighting",
@@ -55,5 +62,7 @@
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"update_check": false,
+	"word_separators": "./\\()\"'-,.:;<>~!@#$%^&*|+=[]{}`~?"
 }

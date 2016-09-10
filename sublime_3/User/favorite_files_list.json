@@ -16,7 +16,7 @@
         //-----------------------------------------------
         // NOTES
         //-----------------------------------------------
-        "/Users/justas/repos/notes/reading_list.org",
+        "/Users/justas/repos/notes/learn/reading_list.org",
 
 
 
@@ -25,7 +25,7 @@
         //-----------------------------------------------
 
         // Vinted
-        "/Users/justas/repos/vinted-notes/tasks.org",
+        "/Users/justas/repos/notes/work/tasks.org",
         "/Users/justas/repos/vinted-notes/clipboard.org",
         "/Users/justas/repos/vinted-notes/notes.org",
         "/Users/justas/repos/vinted-notes/snippets.rb",
@@ -33,16 +33,19 @@
         "/Users/justas/repos/vinted-notes/links.org",
         "/Users/justas/repos/vinted-notes/logins.org",
         "/Users/justas/repos/vinted-notes/queries.sql",
+        "/Users/justas/repos/vinted-notes/sketch.rb",
 
         // Productivity
-        "/Users/justas/repos/notes/main_notes/books.md",
+        "/Users/justas/repos/notes/learn/books.md",
+        "/Users/justas/repos/notes/learn/books_archived.md",
         // "/Users/justas/repos/notes/main_notes/links.org",
         "/Users/justas/repos/notes/main_notes/services.org",
 
         //-----------------------------------------------
         // NOTES
         //-----------------------------------------------
-        "/Users/justas/repos/notes/main_notes/dev_notes/bash",
+        "/Users/justas/repos/notes/dev/bash",
+        "/Users/justas/repos/notes/dev/ruby",
 
         // Dev
         "/Users/justas/repos/notes/war_of_editors/vim/commands",
@@ -58,7 +61,6 @@
         "/Users/justas/repos/notes/main_notes/stats_notes/matrix_algebra.org",
         "/Users/justas/repos/notes/main_notes/dev_notes/scala ",
         "/Users/justas/repos/notes/main_notes/dev_notes/python",
-        "/Users/justas/repos/notes/main_notes/dev_notes/ruby",
         "/Users/justas/repos/notes/main_notes/dev_notes/meteor",
         "/Users/justas/repos/notes/main_notes/dev_notes/mongo",
         "/Users/justas/repos/notes/main_notes/dev_notes/csvkit",

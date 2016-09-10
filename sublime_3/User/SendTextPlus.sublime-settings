@@ -1,42 +1,40 @@
 {
-    // path to tmux and screen (linux/mac)
-    "tmux" : "/usr/local/bin/tmux",
-    // "screen" : "screen",
-
-    // syntax settings
-    "r" :
-    {
-        "prog" : "iTerm",
-        "block" : true,
-        "auto_advance" : true
-    },
-    "python" :
-    {
-        "prog" : "iTerm",
-        "block" : true,
-        "auto_advance" : true
-    },
-    "julia" :
-    {
-        "prog" : "iTerm",
-        "block" : true,
-        "auto_advance" : true
-    },
-
-    // default settings
-    "default":
-    {
-        "osx" : {
-            "prog" : "iTerm",
-            "auto_advance" : true
-        },
-        "linux" : {
-            "prog" : "tmux",
-            "auto_advance" : true
-        },
-        "windows" : {
-            "prog" : "PowerShell",
-            "auto_advance" : true
-        }
-    }
+	"default":
+	{
+		"linux":
+		{
+			"auto_advance": true,
+			"prog": "tmux"
+		},
+		"osx":
+		{
+			"auto_advance": true,
+			"prog": "iTerm"
+		},
+		"windows":
+		{
+			"auto_advance": true,
+			"prog": "PowerShell"
+		}
+	},
+	"julia":
+	{
+		"auto_advance": true,
+		"block": true,
+		"prog": "iTerm"
+	},
+	"prog": "iTerm",
+	"python":
+	{
+		"auto_advance": true,
+		"block": true,
+		"prog": "iTerm"
+	},
+	"r":
+	{
+		"auto_advance": true,
+		"block": true,
+		"prog": "iTerm"
+	},
+	"tmux": "/usr/local/bin/tmux"
 }

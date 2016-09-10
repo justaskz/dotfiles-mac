@@ -22,7 +22,8 @@ alias gil="git log"
 alias gill="git log --graph --oneline --all"
 alias gilll="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset' --all"
 alias gir="git reset HEAD^"
-alias gib="git branch"
+alias gib="git branch --sort=-committerdate"
+alias gibb="git branch"
 alias gifp="git push -f origin HEAD"
 alias gisave="git add .; git commit -m foo"
 alias giupdate="git add .; git commit --am; git push -f origin HEAD"
@@ -46,13 +47,16 @@ alias untar="tar xvzf"
 alias genv="env | grep"
 
 alias kitchen="bundle exec kitchen"
+alias hh="heroku"
 
 #################################################
 ## RAILS
 #################################################
 alias rs="script/server"
 alias rc="rails console"
-alias rmigrate="rake db:migrate"
+alias rmigrate="bundle exec rake db:migrate"
+# alias rmigrate_test="bundle exec rake db:migrate RAILS_ENV=test"
+alias rmigrate_test="mysql md_test < db/structure.sql"
 alias rreset="rake db:reset"
 alias rtest="bundle exec spring rspec"
 alias rtestag="spring rspec --tag selected -f d"

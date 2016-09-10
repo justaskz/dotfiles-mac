@@ -9,6 +9,7 @@
 		"All Autocomplete",
 		"Apache Pig",
 		"Bats (Bash Automated Testing System)",
+		"BeautifyRuby",
 		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Coco R Syntax Highlighting",
@@ -23,7 +24,6 @@
 		"Emmet",
 		"Expand Selection to Quotes",
 		"FavoriteFiles",
-		"GhostText",
 		"Git",
 		"GotoTab",
 		"Guard",
@@ -34,6 +34,8 @@
 		"IPython Notebook",
 		"Jade",
 		"Javascript Beautify",
+		"JavaScriptNext - ES6 Syntax",
+		"JSX",
 		"Julia",
 		"knitr",
 		"LaTeXing",
@@ -48,6 +50,7 @@
 		"RailsGoToSpec",
 		"Riot Syntax",
 		"Riot Tag",
+		"Ruby Block Converter",
 		"Ruby Slim",
 		"Select Quoted",
 		"SendTextPlus",
@@ -58,7 +61,6 @@
 		"SublimeERB",
 		"SublimeLinter",
 		"SublimeLinter-coffeelint",
-		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-julialint",
 		"SublimeLinter-contrib-reek",
 		"SublimeLinter-contrib-scss-lint",
@@ -73,6 +75,7 @@
 		"TypeScript",
 		"VimL",
 		"Vue Syntax Highlight",
-		"WordCount"
+		"WordCount",
+		"WordHighlight"
 	]
 }

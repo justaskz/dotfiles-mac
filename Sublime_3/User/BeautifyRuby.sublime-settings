@@ -1,0 +1,7 @@
+{
+  "file_patterns": ["\\.html\\.erb", "\\.rb", "\\.rake", "Rakefile", "Gemfile", "Vagrantfile"],
+  "html_erb_patterns": ["\\.html\\.erb"],
+  "run_on_save": false,
+  "tab_size": 2,
+  "save_on_beautify": false
+}
