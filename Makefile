@@ -2,7 +2,7 @@ help:
 	@ echo 'make backup or make install'
 
 backup:
-	@ bash backuper backup
+	@ bash backuper run
 
 install:
-	@ bash installer install
+	@ bash installer run

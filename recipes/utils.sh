@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 function install {
-  web
-  data_science
+  system
+  # web
+  # data_science
 }
 
 function system {
@@ -50,4 +51,3 @@ function data_science {
 }
 
 $@
-

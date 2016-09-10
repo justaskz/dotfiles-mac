@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
 function install {
+  # DONWLOAD AND INSTALL SUBLIME MANUALLY
+
+  config
+  install_ctags
+}
+
+function config {
   SUBLIME_PATH="$HOME/Library/Application Support/Sublime Text 3"
   mkdir -p "$SUBLIME_PATH"
 
@@ -22,6 +29,7 @@ function install {
 
 function install_ctags {
   brew install ctags
+  gem install ripper-tags
 }
 
 $@
