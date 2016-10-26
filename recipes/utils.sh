@@ -23,6 +23,8 @@ function system {
   # brew install gpg
   brew install htop
   brew install tree
+
+  brew install rmtrash
 }
 
 function web {

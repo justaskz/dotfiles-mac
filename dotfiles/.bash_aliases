@@ -32,7 +32,7 @@ alias giupdate="git add .; git commit --am; git push -f origin HEAD"
 ## TOOLS
 #################################################
 alias ..="cd .."
-alias rr="rm -rf"
+alias rr="rmtrash"
 alias ls="ls -G"
 alias l="ls"
 alias a="ls"

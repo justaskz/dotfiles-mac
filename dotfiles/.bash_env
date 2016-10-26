@@ -42,7 +42,7 @@ PATH="$PATH:$SHPEC_HOME/bin"
 GNU_UTILS="/usr/local/opt/coreutils/libexec/gnubin"
 PATH="$GNU_UTILS:$PATH"
 
-CLI_TOOLS_HOME="$HOME/repos/cli-tools"
+CLI_TOOLS_HOME="$HOME/opt/cli-tools"
 PATH="$CLI_TOOLS_HOME/bin:$PATH"
 
 PERF_HOME="$HOME/repos/crystal/perf2"
@@ -53,7 +53,5 @@ PATH="$PATH:$JULIE_TEST_HOME/bin"
 
 VW_HOME="$OPT/vowpal_wabbit"
 PATH="$PATH:$VW_HOME/vowpalwabbit"
-
-# export PATH
 
 export PYTHONPATH="$HOME/repos/python-modules"

@@ -2,9 +2,19 @@
 
 function install {
   brew install pyenv
-  pyenv install miniconda
+  sudo easy_install pip
+  virtualenv
 
-  conda install jupyter
+  # pyenv install miniconda
+
+  # conda install jupyter
 }
 
+
+function virtualenv {
+  sudo pip install virtualenv
+  mkdir -p ~/.virtualenvs
+  virtualenv ~/.virtualenvs/main
+  . ~/.virtualenvs/main/bin/activate
+}
 $@
