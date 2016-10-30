@@ -62,7 +62,6 @@
 		"SublimeLinter",
 		"SublimeLinter-coffeelint",
 		"SublimeLinter-contrib-julialint",
-		"SublimeLinter-contrib-reek",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-jshint",
 		"SublimeLinter-rubocop",

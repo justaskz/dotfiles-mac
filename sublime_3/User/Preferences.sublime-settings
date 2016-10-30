@@ -30,10 +30,11 @@
 		"webpack",
 		"tmp",
 		"libs",
-		"certs"
+		"certs",
+		"Package Control.cache"
 	],
 	"font_face": "Courier New",
-	"font_size": 22,
+	"font_size": 21,
 	"ignored_packages":
 	[
 		"Coco R Syntax Highlighting",

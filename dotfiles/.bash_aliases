@@ -47,7 +47,12 @@ alias untar="tar xvzf"
 alias genv="env | grep"
 
 alias kitchen="bundle exec kitchen"
-alias hh="heroku"
+
+#################################################
+## HEROKU
+#################################################
+alias h="heroku"
+alias hdep="git push -f heroku master"
 
 #################################################
 ## RAILS
@@ -66,7 +71,6 @@ alias jtest="RAILS_ENV=test bundle exec rake spec:javascript SPEC=my_test"
 #################################################
 ## BOOKMARKS
 #################################################
-alias h="cd ~"
 alias bin="cd ~/bin"
 alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
@@ -74,7 +78,8 @@ alias ele="cd ~/repos/notes/install/install_elementary/src"
 alias tools="cd ~/repos/notes/install/install_tools/src"
 alias vimr="cd ~/repos/notes/war_of_editors/vim/vimrc/src"
 alias dbox="cd ~/Dropbox"
-alias books="cd ~/Dropbox/books"
+alias gdrive="cd ~/Google\ Drive"
+alias books="cd ~/Google\ Drive/books"
 alias juliafolder="cd ~/.julia/v0.3"
 alias sublime="cd $SUBLIME"
 
@@ -82,8 +87,8 @@ alias sublime="cd $SUBLIME"
 ## VINTED STUFF
 #################################################
 alias us_reset='COUNTRY=us bundle exec rake db:drop db:create db:structure:load db:seed'
-alias us_console='COUNTRY=us script/console'
-alias us_server='COUNTRY=us script/server'
+alias us_console='COUNTRY=us bundle exec rails c'
+alias us_server='COUNTRY=us bundle exec rails s'
 alias us_migrate='COUNTRY=us bundle exec rake db:migrate'
 alias us_images='COUNTRY=us script/rails s thin --port=3014'
 

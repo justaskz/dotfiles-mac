@@ -5,7 +5,7 @@ function install {
   sudo easy_install pip
   virtualenv
 
-  # pyenv install miniconda
+  # pyenv install miniconda3-latest
 
   # conda install jupyter
 }
@@ -17,4 +17,5 @@ function virtualenv {
   virtualenv ~/.virtualenvs/main
   . ~/.virtualenvs/main/bin/activate
 }
+
 $@

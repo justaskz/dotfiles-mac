@@ -24,7 +24,7 @@ function create_folders {
 }
 
 function backup_dotfiles {
-  FILES=('.zshrc' '.bash_aliases' '.bash_env' '.vimrc' '.tmux.conf' '.gitconfig' '.gitignore' '.config.reek' '.rubocop.yml')
+  FILES=('.zshrc' '.bash_aliases' '.bash_env' '.vimrc' '.tmux.conf' '.gitconfig' '.gitignore' '.rubocop.yml')
 
   for file in "${FILES[@]}"; do
     cp $HOME/$file $BACKUP_FOLDER/dotfiles

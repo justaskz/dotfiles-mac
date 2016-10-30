@@ -41,11 +41,6 @@
                 "args": [],
                 "excludes": []
             },
-            "reek": {
-                "@disable": true,
-                "args": [],
-                "excludes": []
-            },
             "rubocop": {
                 "@disable": false,
                 "args": [],

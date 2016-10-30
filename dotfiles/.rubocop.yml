@@ -5,9 +5,24 @@ AllCops:
     - 'tmp/**/*'
   TargetRubyVersion: 2.3
 
+LineLength:
+  Max: 99
+
 Style/Encoding:
   EnforcedStyle: when_needed
   Enabled: true
 
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: always
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+
+Documentation:
+  Enabled: false

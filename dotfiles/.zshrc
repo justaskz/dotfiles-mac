@@ -3,10 +3,6 @@
 source $HOME/.bash_aliases
 source $HOME/.bash_env
 
-#################################################
-## MISC
-#################################################
-
 # environmebt mount
 eval "$(rbenv init - zsh)"
 eval "$(pyenv init -)"

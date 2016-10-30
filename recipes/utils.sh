@@ -12,7 +12,7 @@ function system {
   brew install gnu-tar --with-default-names
   brew install gnu-which --with-default-names
   brew install gnutls --with-default-names
-  brew install grep --with-default-names
+  brew install homebrew/dupes/grep --with-default-names
   brew install coreutils
   # brew install binutils
   # brew install diffutils

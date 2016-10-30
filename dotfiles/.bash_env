@@ -27,7 +27,7 @@ export SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
 #################################################
 
 # Original PATH
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin"
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 PATH="$PATH:$HOME/bin"
 
 PATH="$PATH:$HOME/.rbenv/bin"
@@ -54,4 +54,16 @@ PATH="$PATH:$JULIE_TEST_HOME/bin"
 VW_HOME="$OPT/vowpal_wabbit"
 PATH="$PATH:$VW_HOME/vowpalwabbit"
 
+# PROJECTOR_HOME="$OPT/projector"
+PROJECTOR_HOME="$HOME/repos/personal/projector"
+PATH="$PATH:$PROJECTOR_HOME/bin"
+
+GUARDIAN_HOME="$OPT/guardian"
+PATH="$PATH:$GUARDIAN_HOME"
+
+BOOKDIFF_HOME="$OPT/node-bookdiff"
+PATH="$PATH:$BOOKDIFF_HOME/bin"
+
 export PYTHONPATH="$HOME/repos/python-modules"
+export COUNTRY=us
+export ANSIBLE_ROLES_PATH="$HOME/.ansible/roles"
