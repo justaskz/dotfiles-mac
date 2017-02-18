@@ -31,7 +31,8 @@
 		"tmp",
 		"libs",
 		"certs",
-		"Package Control.cache"
+		"Package Control.cache",
+		"coverage"
 	],
 	"font_face": "Courier New",
 	"font_size": 21,

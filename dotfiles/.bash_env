@@ -67,3 +67,4 @@ PATH="$PATH:$BOOKDIFF_HOME/bin"
 export PYTHONPATH="$HOME/repos/python-modules"
 export COUNTRY=us
 export ANSIBLE_ROLES_PATH="$HOME/.ansible/roles"
+export PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig

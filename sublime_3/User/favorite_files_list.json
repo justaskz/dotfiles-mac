@@ -13,6 +13,7 @@
     "/Users/justas/.vimrc",
     "/Users/justas/.tmux.conf",
     "/Users/justas/.zshrc",
+    "/Users/justas/.rubocop.yml",
 
 
     //-----------------------------------------------
@@ -26,6 +27,7 @@
     "/Users/justas/repos/notes/dev/R",
     "/Users/justas/repos/notes/dev/unix",
     "/Users/justas/repos/notes/dev/mysql",
+    "/Users/justas/repos/notes/dev/regex",
 
     "/Users/justas/repos/notes/learn/topics.org",
 
@@ -74,7 +76,6 @@
     "/Users/justas/repos/notes/main_notes/dev_notes/csvkit",
 
 
-    "/Users/justas/repos/notes/main_notes/dev_notes/RegEx.md",
     "/Users/justas/repos/notes/main_notes/dev_notes/mongo.md",
     "/Users/justas/repos/notes/main_notes/dev_notes/sqlite",
 
