@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 
-VERSION=3.4.9
-URL="http://apache.mirror.serveriai.lt/zookeeper/zookeeper-$VERSION/zookeeper-$VERSION.tar.gz"
+source "recipes/apache_installer.sh"
 
-function install {
-  rm -rf "$OPT/zookeeper-$VERSION"
-  rm -rf "$TMP/zookeeper*"
+NAME="zookeeper"
+URL="http://apache.mirror.serveriai.lt/zookeeper/current/zookeeper-3.4.10.tar.gz"
 
-  wget -P $TMP $URL
-  tar -xf "$TMP/zookeeper-$VERSION.tar.gz" --directory $OPT/
-  # mv $OPT/"spark"* $OPT/spark
-}
-
-$@
+apache_installer $NAME $URL

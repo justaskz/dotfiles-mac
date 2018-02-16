@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 
-VERSION=0.10.0.1
-URL="http://apache.mirror.vu.lt/apache/kafka/$VERSION/kafka_2.11-$VERSION.tgz"
+source "recipes/apache_installer.sh"
 
-function install {
-  rm -rf "$OPT/kafka-$VERSION"
-  rm -rf "$TMP/kafka*"
+NAME="kafka"
+URL="http://apache.mirror.vu.lt/apache/kafka/0.10.2.0/kafka_2.10-0.10.2.0.tgz"
 
-  wget -P $TMP $URL
-  tar -xf "$TMP/kafka_2.11-$VERSION.tgz" --directory $OPT/
-  # mv $OPT/"spark"* $OPT/spark
-}
-
-$@
+apache_installer $NAME $URL

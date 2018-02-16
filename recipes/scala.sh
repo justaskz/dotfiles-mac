@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
 
-VERSION=2.11.8
+source "recipes/apache_installer.sh"
+
+NAME="scala"
+VERSION=2.12.1
 URL="http://downloads.lightbend.com/scala/$VERSION/scala-$VERSION.tgz"
 
-function install {
-  rm -rf "$OPT/scala-$VERSION"
-  rm -rf $TMP/scala*
-
-  wget -P $TMP $URL
-  tar -xf "$TMP/scala-$VERSION.tgz" --directory $OPT/
-}
-
-$@
+apache_installer $NAME $URL

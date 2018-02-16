@@ -64,6 +64,8 @@ PATH="$PATH:$GUARDIAN_HOME"
 BOOKDIFF_HOME="$OPT/node-bookdiff"
 PATH="$PATH:$BOOKDIFF_HOME/bin"
 
+export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
+
 export PYTHONPATH="$HOME/repos/python-modules"
 export COUNTRY=us
 export ANSIBLE_ROLES_PATH="$HOME/.ansible/roles"

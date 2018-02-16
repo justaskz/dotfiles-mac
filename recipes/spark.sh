@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 
-VERSION=1.6.1
-URL="http://apache.mirror.vu.lt/apache/spark/spark-$VERSION/spark-$VERSION-bin-hadoop2.6.tgz"
+source "recipes/apache_installer.sh"
 
-function install {
-  rm -rf $OPT/spark*
-  rm -rf $TMP/spark*
+NAME="spark"
+URL="http://apache.mirror.vu.lt/apache/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.7.tgz"
 
-  wget -P $TMP $URL
-  tar -xf $TMP/spark*.tgz --directory $OPT/
-  mv $OPT/"spark"* $OPT/spark
-}
-
-$@
+apache_installer $NAME $URL
