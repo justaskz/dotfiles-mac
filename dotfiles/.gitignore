@@ -3,3 +3,4 @@ tags
 .DS_Store
 *.rdb
 node_modules
+core_snippets.rb

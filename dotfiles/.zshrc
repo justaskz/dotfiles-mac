@@ -4,8 +4,13 @@ source $HOME/.bash_aliases
 source $HOME/.bash_env
 
 # environmebt mount
-eval "$(rbenv init - zsh)"
-eval "$(pyenv init -)"
+if hash rbenv 2>/dev/null; then
+  eval "$(rbenv init - zsh)"
+fi
+
+if hash pyenv 2>/dev/null; then
+  eval "$(pyenv init -)"
+fi
 
 # makes VIM work with ctrl
 stty -ixon -ixoff

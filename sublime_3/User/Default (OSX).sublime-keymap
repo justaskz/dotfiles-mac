@@ -92,12 +92,14 @@
   { "keys": ["command+t", "command+r"], "command": "rebuild_tags" },
 
   // Open favorite files list
-  { "keys": ["command+space", "command+f"], "command": "select_favorite_file" },
+  { "keys": ["command+space", "command+f"], "command": "favorite_files_open" },
   // Send to Terminal
   { "keys": ["command+\\"], "command": "send_text_plus" },
   // Show in sidebar
   { "keys": ["command+shift+r"], "command": "reveal_in_side_bar" },
 
+  { "keys": ["command+shift+["], "command": "do_end_to_brace" },
+  { "keys": ["command+shift+]"], "command": "brace_to_do_end" },
 
   //-----------------------------------------------
   // SIDEBAR

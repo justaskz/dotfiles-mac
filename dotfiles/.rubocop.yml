@@ -9,7 +9,6 @@ LineLength:
   Max: 99
 
 Style/Encoding:
-  EnforcedStyle: when_needed
   Enabled: true
 
 Style/FrozenStringLiteralComment:
@@ -20,9 +19,6 @@ Style/ClassAndModuleChildren:
 
 Style/MutableConstant:
   Enabled: false
-
-TrailingCommaInLiteral:
-  EnforcedStyleForMultiline: comma
 
 Documentation:
   Enabled: false

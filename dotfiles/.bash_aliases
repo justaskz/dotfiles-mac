@@ -18,6 +18,7 @@ alias tms="tmux source-file ~/.tmux.conf"
 alias gis="git status -s"
 alias giss="git status"
 alias gic="git checkout"
+alias gip="git remote prune origin"
 alias gil="git log"
 alias gill="git log --graph --oneline --all"
 alias gilll="git log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset' --all"
@@ -25,7 +26,7 @@ alias gir="git reset HEAD^"
 alias gib="git branch --sort=-committerdate"
 alias gibb="git branch"
 alias gifp="git push -f origin HEAD"
-alias gisave="git add .; git commit -m foo"
+alias gisave="git add .; git commit -m wip"
 alias giupdate="git add .; git commit --am; git push -f origin HEAD"
 
 #################################################
@@ -59,11 +60,15 @@ alias hdep="git push -f heroku master"
 #################################################
 alias rs="script/server"
 alias rc="rails console"
+alias rsidekiq="bundle exec sidekiq -C config/sidekiq.yml"
 alias rmigrate="bundle exec rake db:migrate"
+alias rmigrate_rollback="bundle exec rake db:rollback"
 # alias rmigrate_test="bundle exec rake db:migrate RAILS_ENV=test"
 alias rmigrate_test="mysql md_test < db/structure.sql"
 alias rreset="rake db:reset"
-alias rtest="bundle exec spring rspec"
+alias rtest="bundle exec spring rspec --profile --"
+alias rfeed="rtest spec/integration/feed spec/domain/feed/"
+alias rintegration_feed="rtest spec/integration/feed"
 alias rtestag="spring rspec --tag selected -f d"
 alias lint="scss-lint | grep order"
 alias jtest="RAILS_ENV=test bundle exec rake spec:javascript SPEC=my_test"
@@ -86,14 +91,6 @@ alias sublime="cd $SUBLIME"
 #################################################
 ## VINTED STUFF
 #################################################
-alias us_reset='COUNTRY=us bundle exec rake db:drop db:create db:structure:load db:seed'
-alias us_console='COUNTRY=us bundle exec rails c'
-alias us_server='COUNTRY=us bundle exec rails s'
-alias us_migrate='COUNTRY=us bundle exec rake db:migrate'
-alias us_images='COUNTRY=us script/rails s thin --port=3014'
-
-alias de_reset='COUNTRY=de bundle exec rake db:drop db:create db:structure:load db:seed'
-alias de_console='COUNTRY=de script/console'
-alias de_server='COUNTRY=de script/server'
-alias de_migrate='COUNTRY=de bundle exec rake db:migrate'
-alias de_images='COUNTRY=de script/rails s thin --port=3014'
+function sshcore {
+  ssh -t jkazakauskas@janitor.vinted.net "sudo -u mongrel bash -c 'ssh -t rr-webapp9.vinted.net \"cd /opt/$1/core/current/; bundle exec rails c production\"'"
+}

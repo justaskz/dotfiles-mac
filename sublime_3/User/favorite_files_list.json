@@ -1,109 +1,317 @@
 {
-  "files": [
-    //-----------------------------------------------
-    // CONFIG
-    //-----------------------------------------------
-    "/Users/justas/.bash_env",
-    "/Users/justas/.bash_aliases",
-
-    "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/favorite_files_list.json",
-    "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-    "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/_Default (OSX).sublime-keymap",
-    "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-    "/Users/justas/.vimrc",
-    "/Users/justas/.tmux.conf",
-    "/Users/justas/.zshrc",
-    "/Users/justas/.rubocop.yml",
-
-
-    //-----------------------------------------------
-    // NOTES
-    //-----------------------------------------------
-    "/Users/justas/repos/notes/dev/bash",
-    "/Users/justas/repos/notes/dev/git",
-    "/Users/justas/repos/notes/dev/heroku",
-    "/Users/justas/repos/notes/dev/rails",
-    "/Users/justas/repos/notes/dev/ruby",
-    "/Users/justas/repos/notes/dev/R",
-    "/Users/justas/repos/notes/dev/unix",
-    "/Users/justas/repos/notes/dev/mysql",
-    "/Users/justas/repos/notes/dev/regex",
-
-    "/Users/justas/repos/notes/learn/topics.org",
-
-
-
-    //-----------------------------------------------
-    // DEPRECATED
-    //-----------------------------------------------
-    "/Users/justas/repos/notes/learn/reading_list.org",
-
-    // Vinted
-    "/Users/justas/repos/notes/work/tasks.org",
-    "/Users/justas/repos/vinted-notes/clipboard.org",
-    "/Users/justas/repos/vinted-notes/notes.org",
-    "/Users/justas/repos/vinted-notes/snippets.rb",
-    "/Users/justas/repos/vinted-notes/links.org",
-    "/Users/justas/repos/vinted-notes/logins.org",
-    "/Users/justas/repos/vinted-notes/queries.sql",
-    "/Users/justas/repos/vinted-notes/sketch.rb",
-
-    // Productivity
-    "/Users/justas/repos/notes/learn/books.md",
-    "/Users/justas/repos/notes/learn/books_archived.md",
-    // "/Users/justas/repos/notes/main_notes/links.org",
-    "/Users/justas/repos/notes/main_notes/services.org",
-
-    //-----------------------------------------------
-    // NOTES
-    //-----------------------------------------------
-
-    // Dev
-    "/Users/justas/repos/notes/war_of_editors/vim/commands",
-    "/Users/justas/repos/notes/war_of_editors/vim/ztmux",
-
-    "/Users/justas/repos/notes/main_notes/index.org",
-    "/Users/justas/repos/notes/main_notes/dev_notes/javascript",
-    "/Users/justas/repos/notes/main_notes/dev_notes/node",
-    "/Users/justas/repos/notes/main_notes/stats_notes/vw",
-    "/Users/justas/repos/notes/main_notes/stats_notes/old.R",
-    "/Users/justas/repos/notes/main_notes/stats_notes/julia",
-    "/Users/justas/repos/notes/main_notes/stats_notes/matrix_algebra.org",
-    "/Users/justas/repos/notes/main_notes/dev_notes/scala ",
-    "/Users/justas/repos/notes/main_notes/dev_notes/python",
-    "/Users/justas/repos/notes/main_notes/dev_notes/meteor",
-    "/Users/justas/repos/notes/main_notes/dev_notes/mongo",
-    "/Users/justas/repos/notes/main_notes/dev_notes/csvkit",
-
-
-    "/Users/justas/repos/notes/main_notes/dev_notes/mongo.md",
-    "/Users/justas/repos/notes/main_notes/dev_notes/sqlite",
-
-    "/Users/justas/repos/notes/main_notes/stats_notes/tools.org",
-    "/Users/justas/repos/notes/main_notes/career.org",
-    "/Users/justas/Dropbox/Notes/global notes.txt",
-    "/Users/justas/repos/node-practice/codewars-katas/katas.org",
-
-    "/Users/justas/repos/notes/war_of_editors/text-editor-spec.md",
-
-
-    "/Users/justas/repos/notes/R/ggplot2.R",
-    "/Users/justas/repos/notes/JS/libs.md",
-    "/Users/justas/repos/notes/main_notes/linux commands",
-    "/Users/justas/repos/notes/R/R commands-old.R",
-    "/Users/justas/repos/notes/other/html.jade",
-    "/Users/justas/repos/notes/main_notes/dev_notes/css.styl",
-    "/Users/justas/repos/notes/other/services.txt",
-    "/Users/justas/repos/notes/config/install_aws.sh",
-    "/Users/justas/repos/notes/main_notes/sublime.md",
-    "/Users/justas/repos/notes/main_notes/sublime3.md",
-    "/tmp/output.sql",
-  ],
-  "groups": {
-    "qqqq": [
-      "/Users/justas/repos/notes/install/install_tools/sync",
-      "/Users/justas/repos/notes/install/install_elementary/src/5_install_dev.sh"
-    ]
-  },
-  "version": 1
+    "files": [
+        {
+            "alias": ".bash_env",
+            "file": "/Users/justas/.bash_env"
+        },
+        {
+            "alias": ".bash_aliases",
+            "file": "/Users/justas/.bash_aliases"
+        },
+        {
+            "alias": "favorite_files_list.json",
+            "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/favorite_files_list.json"
+        },
+        {
+            "alias": "Default (OSX).sublime-keymap",
+            "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
+        },
+        {
+            "alias": "_Default (OSX).sublime-keymap",
+            "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/_Default (OSX).sublime-keymap"
+        },
+        {
+            "alias": "Preferences.sublime-settings",
+            "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+        },
+        {
+            "alias": ".vimrc",
+            "file": "/Users/justas/.vimrc"
+        },
+        {
+            "alias": ".tmux.conf",
+            "file": "/Users/justas/.tmux.conf"
+        },
+        {
+            "alias": ".zshrc",
+            "file": "/Users/justas/.zshrc"
+        },
+        {
+            "alias": ".rubocop.yml",
+            "file": "/Users/justas/.rubocop.yml"
+        },
+        {
+            "alias": "feed_seed_dedicated.rb",
+            "file": "/Users/justas/repos/feed_seed_dedicated.rb"
+        },
+        {
+            "alias": "feed_seed_random.rb",
+            "file": "/Users/justas/repos/feed_seed_random.rb"
+        },
+        {
+            "alias": "item_seed.rb",
+            "file": "/Users/justas/repos/item_seed.rb"
+        },
+        {
+            "alias": "bash",
+            "file": "/Users/justas/repos/notes/dev/bash"
+        },
+        {
+            "alias": "git",
+            "file": "/Users/justas/repos/notes/dev/git"
+        },
+        {
+            "alias": "heroku",
+            "file": "/Users/justas/repos/notes/dev/heroku"
+        },
+        {
+            "alias": "mysql",
+            "file": "/Users/justas/repos/notes/dev/mysql"
+        },
+        {
+            "alias": "elasticsearch",
+            "file": "/Users/justas/repos/notes/dev/elasticsearch"
+        },
+        {
+            "alias": "R",
+            "file": "/Users/justas/repos/notes/dev/R"
+        },
+        {
+            "alias": "rails",
+            "file": "/Users/justas/repos/notes/dev/rails"
+        },
+        {
+            "alias": "redis",
+            "file": "/Users/justas/repos/notes/dev/redis"
+        },
+        {
+            "alias": "regex",
+            "file": "/Users/justas/repos/notes/dev/regex"
+        },
+        {
+            "alias": "ruby",
+            "file": "/Users/justas/repos/notes/dev/ruby"
+        },
+        {
+            "alias": "sqlite",
+            "file": "/Users/justas/repos/notes/dev/sqlite"
+        },
+        {
+            "alias": "unix",
+            "file": "/Users/justas/repos/notes/dev/unix"
+        },
+        {
+            "alias": "topics.org",
+            "file": "/Users/justas/repos/notes/learn/topics.org"
+        },
+        {
+            "alias": "meets.org",
+            "file": "/Users/justas/repos/vinted-notes/meets.org"
+        },
+        {
+            "alias": "flat.org",
+            "file": "/Users/justas/repos/notes/life/flat.org"
+        },
+        {
+            "alias": "job.org",
+            "file": "/Users/justas/repos/notes/life/job.org"
+        },
+        {
+            "alias": "holidays.org",
+            "file": "/Users/justas/repos/notes/life/holidays.org"
+        },
+        {
+            "alias": "reading_list.org",
+            "file": "/Users/justas/repos/notes/learn/reading_list.org"
+        },
+        {
+            "alias": "tasks.org",
+            "file": "/Users/justas/repos/notes/work/tasks.org"
+        },
+        {
+            "alias": "recommendations_engine.org",
+            "file": "/Users/justas/repos/notes/work/recommendations_engine.org"
+        },
+        {
+            "alias": "clipboard.org",
+            "file": "/Users/justas/repos/vinted-notes/clipboard.org"
+        },
+        {
+            "alias": "notes.org",
+            "file": "/Users/justas/repos/vinted-notes/notes.org"
+        },
+        {
+            "alias": "snippets.rb",
+            "file": "/Users/justas/repos/vinted-notes/snippets.rb"
+        },
+        {
+            "alias": "core_snippets.rb",
+            "file": "/Users/justas/repos/core/core_snippets.rb"
+        },
+        {
+            "alias": "links.org",
+            "file": "/Users/justas/repos/vinted-notes/links.org"
+        },
+        {
+            "alias": "logins.org",
+            "file": "/Users/justas/repos/vinted-notes/logins.org"
+        },
+        {
+            "alias": "queries.sql",
+            "file": "/Users/justas/repos/vinted-notes/queries.sql"
+        },
+        {
+            "alias": "sketch.rb",
+            "file": "/Users/justas/repos/vinted-notes/sketch.rb"
+        },
+        {
+            "alias": "books.md",
+            "file": "/Users/justas/repos/notes/learn/books.md"
+        },
+        {
+            "alias": "books_archived.md",
+            "file": "/Users/justas/repos/notes/learn/books_archived.md"
+        },
+        {
+            "alias": "services.org",
+            "file": "/Users/justas/repos/notes/main_notes/services.org"
+        },
+        {
+            "alias": "commands",
+            "file": "/Users/justas/repos/notes/war_of_editors/vim/commands"
+        },
+        {
+            "alias": "ztmux",
+            "file": "/Users/justas/repos/notes/war_of_editors/vim/ztmux"
+        },
+        {
+            "alias": "index.org",
+            "file": "/Users/justas/repos/notes/main_notes/index.org"
+        },
+        {
+            "alias": "javascript",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/javascript"
+        },
+        {
+            "alias": "node",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/node"
+        },
+        {
+            "alias": "vw",
+            "file": "/Users/justas/repos/notes/main_notes/stats_notes/vw"
+        },
+        {
+            "alias": "old.R",
+            "file": "/Users/justas/repos/notes/main_notes/stats_notes/old.R"
+        },
+        {
+            "alias": "julia",
+            "file": "/Users/justas/repos/notes/main_notes/stats_notes/julia"
+        },
+        {
+            "alias": "matrix_algebra.org",
+            "file": "/Users/justas/repos/notes/main_notes/stats_notes/matrix_algebra.org"
+        },
+        {
+            "alias": "scala ",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/scala "
+        },
+        {
+            "alias": "python",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/python"
+        },
+        {
+            "alias": "meteor",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/meteor"
+        },
+        {
+            "alias": "mongo",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/mongo"
+        },
+        {
+            "alias": "csvkit",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/csvkit"
+        },
+        {
+            "alias": "mongo.md",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/mongo.md"
+        },
+        {
+            "alias": "tools.org",
+            "file": "/Users/justas/repos/notes/main_notes/stats_notes/tools.org"
+        },
+        {
+            "alias": "career.org",
+            "file": "/Users/justas/repos/notes/main_notes/career.org"
+        },
+        {
+            "alias": "global notes.txt",
+            "file": "/Users/justas/Dropbox/Notes/global notes.txt"
+        },
+        {
+            "alias": "katas.org",
+            "file": "/Users/justas/repos/node-practice/codewars-katas/katas.org"
+        },
+        {
+            "alias": "text-editor-spec.md",
+            "file": "/Users/justas/repos/notes/war_of_editors/text-editor-spec.md"
+        },
+        {
+            "alias": "ggplot2.R",
+            "file": "/Users/justas/repos/notes/R/ggplot2.R"
+        },
+        {
+            "alias": "libs.md",
+            "file": "/Users/justas/repos/notes/JS/libs.md"
+        },
+        {
+            "alias": "linux commands",
+            "file": "/Users/justas/repos/notes/main_notes/linux commands"
+        },
+        {
+            "alias": "R commands-old.R",
+            "file": "/Users/justas/repos/notes/R/R commands-old.R"
+        },
+        {
+            "alias": "html.jade",
+            "file": "/Users/justas/repos/notes/other/html.jade"
+        },
+        {
+            "alias": "css.styl",
+            "file": "/Users/justas/repos/notes/main_notes/dev_notes/css.styl"
+        },
+        {
+            "alias": "services.txt",
+            "file": "/Users/justas/repos/notes/other/services.txt"
+        },
+        {
+            "alias": "install_aws.sh",
+            "file": "/Users/justas/repos/notes/config/install_aws.sh"
+        },
+        {
+            "alias": "sublime.md",
+            "file": "/Users/justas/repos/notes/main_notes/sublime.md"
+        },
+        {
+            "alias": "sublime3.md",
+            "file": "/Users/justas/repos/notes/main_notes/sublime3.md"
+        },
+        {
+            "alias": "output.sql",
+            "file": "/tmp/output.sql"
+        }
+    ],
+    "groups": {
+        "qqqq": [
+            {
+                "alias": "sync",
+                "file": "/Users/justas/repos/notes/install/install_tools/sync"
+            },
+            {
+                "alias": "5_install_dev.sh",
+                "file": "/Users/justas/repos/notes/install/install_elementary/src/5_install_dev.sh"
+            }
+        ]
+    },
+    "version": 2
 }

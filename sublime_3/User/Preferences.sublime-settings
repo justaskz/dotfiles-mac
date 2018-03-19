@@ -1,6 +1,22 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_complete": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.pngs",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"copy_with_empty_selection": true,
@@ -14,7 +30,9 @@
 		".tags*",
 		"tags",
 		"*.js.map",
-		"*.scssc"
+		"*.scssc",
+		"*.rdb",
+		"core_snippets.rb"
 	],
 	"folder_exclude_patterns":
 	[
@@ -32,15 +50,14 @@
 		"libs",
 		"certs",
 		"Package Control.cache",
-		"coverage"
+		"coverage",
+		"public/ckeditor",
+		"core/vendor/assets"
 	],
 	"font_face": "Courier New",
-	"font_size": 21,
+	"font_size": 18,
 	"ignored_packages":
 	[
-		"Coco R Syntax Highlighting",
-		"CoffeeScript",
-		"JavaScriptNext - ES6 Syntax",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -61,6 +78,7 @@
 		99
 	],
 	"save_on_focus_lost": true,
+	"show_definitions": false,
 	"show_panel_on_build": false,
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
