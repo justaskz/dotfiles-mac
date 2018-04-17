@@ -1,6 +1,7 @@
 // SublimeLinter Settings - User
 {
-  "no_column_highlights_line": true,
+  "show_hover_line_report": false,
+  "show_hover_region_report": false,
   "debug": true,
   "paths":{
     "osx": ["~/.rbenv/shims"]

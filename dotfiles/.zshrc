@@ -26,7 +26,7 @@ KEYTIMEOUT=.1
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="avit"
+export ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"

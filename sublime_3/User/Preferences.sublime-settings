@@ -18,7 +18,7 @@
 		"*.zip"
 	],
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
+	"color_scheme": "Packages/Themes/Bliss.tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":

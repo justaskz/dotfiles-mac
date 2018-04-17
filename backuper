@@ -9,13 +9,11 @@
 
 BACKUP_FOLDER="$HOME/repos/dotfiles-mac"
 SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
-# SUBLIME="$HOME/Library/Application Support/Sublime Text 3/Packages"
 
 function run {
   create_folders
   backup_dotfiles
   backup_sublime
-  backup_karabiner
 }
 
 function create_folders {
@@ -38,17 +36,13 @@ function backup_sublime {
   cp -r $SUBLIME/Themes $BACKUP_FOLDER/Sublime_3
 
   # copy all folders
-  find $SUBLIME/User/* -type d -maxdepth 0 -exec cp -r {} $BACKUP_FOLDER/Sublime_3/User \;
+  find $SUBLIME/User/* -maxdepth 0 -type d -exec cp -r {} $BACKUP_FOLDER/Sublime_3/User \;
   # copy all sublime-settings files
   cp $SUBLIME/User/*.sublime-settings $BACKUP_FOLDER/Sublime_3/User/
   # copy other files
   cp $SUBLIME/User/*.sublime-keymap $SUBLIME/User/*.json $BACKUP_FOLDER/Sublime_3/User/
 
   rm -rf $BACKUP_FOLDER/Sublime_3/User/Color\ Highlighter
-}
-
-function backup_karabiner {
-  /Applications/Karabiner.app/Contents/Library/bin/karabiner export > $BACKUP_FOLDER/presets/karabiner.sh
 }
 
 $@
