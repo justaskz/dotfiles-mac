@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function install() {
+function install {
   brew install node
   # rm -rf "$HOME/opt/nodejs"
   # mkdir -p "$HOME/opt/nodejs"

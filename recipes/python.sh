@@ -10,9 +10,8 @@ function install {
   # conda install jupyter
 }
 
-
 function virtualenv {
-  sudo pip install virtualenv
+  pip install virtualenv
   mkdir -p ~/.virtualenvs
   virtualenv ~/.virtualenvs/main
   . ~/.virtualenvs/main/bin/activate

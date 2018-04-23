@@ -6,8 +6,6 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
-		"Bats (Bash Automated Testing System)",
-		"BeautifyRuby",
 		"BracketHighlighter",
 		"ColorSchemeSelector",
 		"Crystal",
@@ -20,18 +18,13 @@
 		"HTML-CSS-JS Prettify",
 		"IPython Notebook",
 		"Javascript Beautify",
-		"JSX",
-		"Julia",
 		"LoremIpsum",
 		"Markdown Preview",
 		"orgmode",
 		"Package Control",
-		"PlainTasks",
 		"Pretty JSON",
 		"RailsGoToSpec",
-		"Riot Syntax",
 		"Ruby Block Converter",
-		"Ruby Slim",
 		"Select Quoted",
 		"SendCode",
 		"SideBarEnhancements",
@@ -45,7 +38,6 @@
 		"Text Pastry",
 		"Theme - Soda",
 		"VimL",
-		"Vue Syntax Highlight",
 		"WordCount",
 		"WordHighlight"
 	]

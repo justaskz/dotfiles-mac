@@ -13,4 +13,5 @@ function apache_installer() {
   wget $URL -O $TMP_FILE
   mkdir -p $OPT_PATH
   tar -xf $TMP_FILE --directory $OPT_PATH --strip-components=1
+  rm -rf $TMP_FILE
 }
