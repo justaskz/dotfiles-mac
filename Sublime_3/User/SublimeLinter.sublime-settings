@@ -2,14 +2,15 @@
 {
   "show_hover_line_report": false,
   "show_hover_region_report": false,
-  "debug": true,
+  "debug": false,
+  "gutter_theme": "Default",
   "paths":{
     "osx": ["~/.rbenv/shims"]
   },
   "styles": [
     {
-      "mark_style": "solid_underline",
-      "priority": 1,
+      "mark_style": "fill",
+      "priority": 0,
       "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
       "icon": "pointer",
       "types": [
@@ -17,8 +18,8 @@
       ]
     },
     {
-      "mark_style": "solid_underline",
-      "priority": 1,
+      "mark_style": "fill",
+      "priority": 0,
       "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
       "icon": "pointer",
       "types": [

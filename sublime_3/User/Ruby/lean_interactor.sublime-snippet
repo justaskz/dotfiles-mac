@@ -1,9 +1,11 @@
 <snippet>
   <content><![CDATA[
-binding.remote_pry
+include LeanInteractor
+
+initialize_for ${1:some_thing}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>qrbinding</tabTrigger>
+  <tabTrigger>qlean_interactor</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.ruby</scope>
 </snippet>
