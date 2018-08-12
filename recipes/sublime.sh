@@ -3,6 +3,8 @@
 function install {
   # DONWLOAD AND INSTALL SUBLIME MANUALLY
 
+  brew install wget
+
   config
   install_ctags
 }
@@ -29,7 +31,9 @@ function config {
 
 function install_ctags {
   brew install ctags
-  gem install ripper-tags
+
+  # do it manually after installing latest ruby
+  # gem install ripper-tags
 }
 
 $@

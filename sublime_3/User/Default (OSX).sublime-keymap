@@ -94,7 +94,7 @@
   // Open favorite files list
   { "keys": ["command+space", "command+f"], "command": "favorite_files_open" },
   // Send to Terminal
-  { "keys": ["command+\\"], "command": "send_text_plus" },
+  { "keys": ["command+\\"], "command": "send_code" },
   // Show in sidebar
   { "keys": ["command+shift+r"], "command": "reveal_in_side_bar" },
 

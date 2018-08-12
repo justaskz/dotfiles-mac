@@ -1,28 +1,43 @@
 #!/usr/bin/env bash
 
 function install {
-  brew install cmake
-  brew install Caskroom/cask/java
-  brew install elasticsearch@2.4
-  brew link elasticsearch@2.4 --force
-  brew install geoip
-  brew install imagemagick@6
-  brew link imagemagick@6 --force
-  brew install libxmlsec1
-  brew install memcached
-  brew install mysql
-  brew install npm
-  brew install percona-toolkit
-  brew install qt
-  brew install rbenv
-  brew install redis
-  brew install ruby-build
-  brew install sphinx
-  brew install v8vips
-  # brew install vips
+  # brew install Caskroom/cask/java
+  # brew install cmake
+  # brew install geoip
+  # brew install geoipupdate
+  # brew install glib
   # brew install libxmlsec1
+  # brew install memcached
+  # brew install node@8
   # brew install openssl
-  # brew link openssl --force
+  # brew install percona-toolkit
+  # brew install qt
+  # brew install redis
+  # brew install v8vips
+  # brew install vips
+  # brew install webp
+  # brew install yarn
+
+  brew install Caskroom/cask/java8
+  brew install openssl
+  # brew install git
+  brew install glib
+  # brew install qt
+  brew install v8
+  brew install libxmlsec1
+  brew install cmake
+  brew install mysql@5.7
+  brew install percona-toolkit
+  brew install memcached
+  brew install redis
+  # brew install elasticsearch
+  # brew install rbenv
+  # brew install ruby-build
+  brew install node@8
+  brew install webp
+  brew install yarn
+  brew install geoip
+  brew install geoipupdate
 }
 
 function ruby_2.3.1_deps {

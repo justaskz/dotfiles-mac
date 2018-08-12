@@ -9,9 +9,9 @@
   },
   "styles": [
     {
-      "mark_style": "fill",
+      "mark_style": "solid_underline",
       "priority": 0,
-      "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
+      "scope": "region.purplish markup.changed.sublime_linter markup.warning.sublime_linter",
       "icon": "pointer",
       "types": [
           "warning"

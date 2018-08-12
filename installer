@@ -5,13 +5,15 @@ function run {
 
   bash recipes/dotfiles.sh install
   bash recipes/brew.sh install
-  bash recipes/utils.sh install
-  bash recipes/git.sh install
 
   bash recipes/iterm.sh install
+  bash recipes/sublime.sh install
   bash recipes/oh-my-zsh.sh install
   bash recipes/tmux.sh install
   bash recipes/vim.sh install
+
+  bash recipes/utils.sh install
+  bash recipes/git.sh install
 
   bash recipes/ruby.sh install
   bash recipes/vinted.sh install
