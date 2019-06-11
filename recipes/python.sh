@@ -2,12 +2,13 @@
 
 function install {
   brew install pyenv
-  sudo easy_install pip
+  easy_install pip
   virtualenv
 
-  # pyenv install miniconda3-latest
+  pyenv install miniconda3-latest
+  pyenv global miniconda3-latest
 
-  # conda install jupyter
+  conda install jupyter
 }
 
 function virtualenv {

@@ -18,12 +18,14 @@ function run {
   bash recipes/ruby.sh install
   bash recipes/vinted.sh install
   bash recipes/mysql.sh install
+  bash recipes/elasticsearch.sh install
 }
 
 function prepare {
   mkdir -p "$HOME/bin"
   mkdir -p "$HOME/opt"
   mkdir -p "$HOME/tmp"
+  mkdir -p "$HOME/.ssh"
 }
 
 $@

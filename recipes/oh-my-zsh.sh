@@ -2,8 +2,10 @@
 
 function install {
   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  cp ./dotfiles/.zshrc $HOME
 
+  rm -f $HOME/.zshrc
+  rm -f $HOME/.zshrc.pre-oh-my-zsh
+  cp ./dotfiles/.zshrc $HOME
   source $HOME/.zshrc
 
   # mkdir -p ~/.fonts

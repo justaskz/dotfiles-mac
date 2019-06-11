@@ -27,6 +27,8 @@ function config {
   # make callable from command line
   rm -rf "$HOME/bin/subl"
   ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "$HOME/bin/subl"
+
+  # defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
 }
 
 function install_ctags {

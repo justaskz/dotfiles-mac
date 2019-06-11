@@ -4,7 +4,7 @@ source "recipes/apache_installer.sh"
 
 function install {
   NAME="elasticsearch"
-  VERSION="6.2.4"
+  VERSION="5.6.10"
   URL="https://artifacts.elastic.co/downloads/$NAME/$NAME-$VERSION.tar.gz"
   apache_installer $NAME $URL
 }
