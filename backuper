@@ -8,7 +8,7 @@
 #################################################
 
 BACKUP_FOLDER="$HOME/repos/dotfiles-mac"
-SUBLIME="$HOME/Library/Application*Support/Sublime*Text*3/Packages"
+SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 3/Packages"
 
 function run {
   create_folders
@@ -33,14 +33,14 @@ function backup_sublime {
   rm -rf $BACKUP_FOLDER/Sublime_3
   mkdir -p $BACKUP_FOLDER/Sublime_3/User
 
-  cp -r $SUBLIME/Themes $BACKUP_FOLDER/Sublime_3
+  cp -r $SUBLIME_PACKAGES/Themes $BACKUP_FOLDER/Sublime_3
 
   # copy all folders
-  find $SUBLIME/User/* -maxdepth 0 -type d -exec cp -r {} $BACKUP_FOLDER/Sublime_3/User \;
+  find $SUBLIME_PACKAGES/User/* -maxdepth 0 -type d -exec cp -r {} $BACKUP_FOLDER/Sublime_3/User \;
   # copy all sublime-settings files
-  cp $SUBLIME/User/*.sublime-settings $BACKUP_FOLDER/Sublime_3/User/
+  cp $SUBLIME_PACKAGES/User/*.sublime-settings $BACKUP_FOLDER/Sublime_3/User/
   # copy other files
-  cp $SUBLIME/User/*.sublime-keymap $SUBLIME/User/*.json $BACKUP_FOLDER/Sublime_3/User/
+  cp $SUBLIME_PACKAGES/User/*.sublime-keymap $SUBLIME_PACKAGES/User/*.json $BACKUP_FOLDER/Sublime_3/User/
 
   rm -rf $BACKUP_FOLDER/Sublime_3/User/Color\ Highlighter
 }

@@ -15,7 +15,8 @@
 		"*.pdf",
 		"*.swf",
 		"*.jar",
-		"*.zip"
+		"*.zip",
+		"core/db/migrates/*.rb"
 	],
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
@@ -52,7 +53,8 @@
 		"Package Control.cache",
 		"coverage",
 		"public/ckeditor",
-		"core/vendor/assets"
+		"core/vendor/assets",
+		"*.svg"
 	],
 	"font_face": "Courier New",
 	"font_size": 16,

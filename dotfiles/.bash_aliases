@@ -53,7 +53,6 @@ alias kitchen="bundle exec kitchen"
 ## HEROKU
 #################################################
 alias h="heroku"
-alias hdep="git push -f heroku master"
 
 #################################################
 ## RAILS
@@ -74,6 +73,9 @@ alias qw_saved_searches="rtest spec/integration/domain/saved_searches spec/domai
 alias lint="scss-lint | grep order"
 alias jtest="RAILS_ENV=test bundle exec rake spec:javascript SPEC=my_test"
 
+alias postgres_start="pg_ctl -D /usr/local/var/postgres start"
+alias postgres_stop="pg_ctl -D /usr/local/var/postgres stop"
+
 #################################################
 ## BOOKMARKS
 #################################################
@@ -89,10 +91,12 @@ alias gdrive="cd ~/Google\ Drive"
 alias books="cd ~/Google\ Drive/books"
 alias juliafolder="cd ~/.julia/v0.3"
 alias sublime="cd $SUBLIME"
+alias gatekeeper_disable="sudo spctl --master-disable"
+alias gatekeeper_enable="sudo spctl --master-enable"
 
 #################################################
 ## VINTED STUFF
 #################################################
 function sshcore {
-  ssh -t jkazakauskas@janitor.vinted.net "sudo -u mongrel bash -c 'ssh -t rr-webapp9.vinted.net \"cd /opt/$1/core/current/; bundle exec rails c production\"'"
+  ssh -t jkazakauskas@janitor.vinted.net "sudo -u mongrel bash -c 'ssh -t rr-webapp1.vinted.net \"cd /opt/$1/core/current/; bundle exec rails c production\"'"
 }

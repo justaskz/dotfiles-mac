@@ -1,11 +1,13 @@
 <snippet>
   <content><![CDATA[
-include Interactor::Initializer
-
-initialize_with ${1:some_thing}
+def ${1:up}
+  execute <<~SQL
+    ${2:# sql code}
+  SQL
+end
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>qinitialize_with</tabTrigger>
+  <tabTrigger>qmigration</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.ruby</scope>
 </snippet>

@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-RSpec.describe ${1:Class}, '.for' do
-  subject(:${2:interactor_name}) { described_class.for(${3:arguments}) }
+RSpec.describe ${1:Class}, ${2:'.for'} do
+  subject${3:} { described_class.for(${4:arguments}) }
 
-  ${4:# code}
+  ${5:# code}
 end
 
 ]]></content>

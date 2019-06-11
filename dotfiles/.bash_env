@@ -3,6 +3,9 @@
 #################################################
 ## GLOBAL
 #################################################
+export LANG=en_GB.UTF-8
+export EDITOR=$HOME/bin/subl
+export GIT_EDITOR=vim
 export BIN=$HOME/bin
 export OPT=$HOME/opt
 export TMP=$HOME/tmp
@@ -70,8 +73,8 @@ ELASTICSEARCH_HOME="$OPT/elasticsearch"
 PATH="$PATH:$ELASTICSEARCH_HOME/bin"
 # export ELASTICSEARCH_HOME="$HOME/opt/elasticsearch6.2.4"
 # export ELASTICSEARCH_HOME="$HOME/opt/elasticsearch6.3"
-export ELASTICSEARCH_CONFIG="/usr/local/etc/elasticsearch"
-export ELASTICSEARCH_DATA="/usr/local/var/elasticsearch/"
+# export ELASTICSEARCH_CONFIG="/usr/local/etc/elasticsearch"
+# export ELASTICSEARCH_DATA="/usr/local/var/elasticsearch/"
 export ELASTICSEARCH_LOGS="/usr/local/var/log/elasticsearch"
 PATH="$PATH:$ELASTICSEARCH_HOME/bin"
 # "/usr/local/var/lib/elasticsearch/elasticsearch_justas/"
@@ -89,5 +92,13 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # export PYTHONPATH="$HOME/repos/python-modules"
-export COUNTRY=us
 # export ANSIBLE_ROLES_PATH="$HOME/.ansible/roles"
+
+GRAFANA_HOME="$OPT/grafana"
+GF_PLUGIN_DIR="$GRAFANA_HOME/data/plugins"
+export PATH="$PATH:$GRAFANA_HOME/bin"
+
+# VINTED
+export COUNTRY=us
+export SIDEKIQ_ALL_QUEUES_POOL_SIZE=1
+export SIDEKIQ_NO_CRM_POOL_SIZE=0
