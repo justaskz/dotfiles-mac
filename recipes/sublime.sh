@@ -10,19 +10,19 @@ function install {
 }
 
 function config {
-  SUBLIME_PATH="$HOME/Library/Application Support/Sublime Text 3"
-  mkdir -p "$SUBLIME_PATH"
+  SUBLIME_HOME="$HOME/Library/Application Support/Sublime Text 3"
+  mkdir -p "$SUBLIME_HOME"
 
-  BACKUP_PATH="$HOME/repos/dotfiles-mac/sublime_3"
+  BACKUP_FOLDER_SUBLIME="$HOME/repos/dotfiles-mac/sublime_3"
 
   # install Package Control
-  PACKAGE_CONTROL_PATH="$SUBLIME_PATH/Installed Packages"
+  PACKAGE_CONTROL_PATH="$SUBLIME_HOME/Installed Packages"
   mkdir -p "$PACKAGE_CONTROL_PATH"
   wget -P "$PACKAGE_CONTROL_PATH" "http://sublime.wbond.net/Package%20Control.sublime-package"
 
   # move settings files
-  rsync -r "$BACKUP_PATH/User/" "$SUBLIME_PATH/Packages/User/"
-  rsync -r "$BACKUP_PATH/Themes/" "$SUBLIME_PATH/Packages/Themes/"
+  rsync -r "$BACKUP_FOLDER_SUBLIME/User/" "$SUBLIME_HOME/Packages/User/"
+  rsync -r "$BACKUP_FOLDER_SUBLIME/Themes/" "$SUBLIME_HOME/Packages/Themes/"
 
   # make callable from command line
   rm -rf "$HOME/bin/subl"

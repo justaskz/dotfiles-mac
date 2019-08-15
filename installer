@@ -1,31 +1,25 @@
 #!/usr/bin/env bash
 
 function run {
-  prepare
+  source ./dotfiles/.env
+  source ./dotfiles/.aliases
+
+  mkdir -p $BIN
+  mkdir -p $OPT
+  mkdir -p $TMP
+  mkdir -p "$HOME/.ssh"
 
   bash recipes/dotfiles.sh install
   bash recipes/brew.sh install
-
   bash recipes/iterm.sh install
   bash recipes/sublime.sh install
-  bash recipes/oh-my-zsh.sh install
+
+  bash recipes/zsh.sh install
   bash recipes/tmux.sh install
   bash recipes/vim.sh install
 
   bash recipes/utils.sh install
   bash recipes/git.sh install
-
-  bash recipes/ruby.sh install
-  bash recipes/vinted.sh install
-  bash recipes/mysql.sh install
-  bash recipes/elasticsearch.sh install
-}
-
-function prepare {
-  mkdir -p "$HOME/bin"
-  mkdir -p "$HOME/opt"
-  mkdir -p "$HOME/tmp"
-  mkdir -p "$HOME/.ssh"
 }
 
 $@

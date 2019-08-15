@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-source $HOME/.bash_aliases
-source $HOME/.bash_env
+source $HOME/.env
+source $HOME/.aliases
 
 # environmebt mount
 if hash rbenv 2>/dev/null; then
@@ -26,17 +26,20 @@ KEYTIMEOUT=.1
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="avit"
+export ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM="~/repos/dotfiles-mac/oh-my-zsh-custom/"
+ZSH_CUSTOM="$HOME/.oh-my-zsh-custom"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git gitfast)
+plugins=(gitfast zsh-syntax-highlighting)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
+
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_PROMPT_ORDER=(dir git exec_time line_sep jobs exit_code char)

@@ -8,41 +8,49 @@
 #################################################
 
 BACKUP_FOLDER="$HOME/repos/dotfiles-mac"
+BACKUP_FOLDER_DOTFILES="$BACKUP_FOLDER/dotfiles"
+BACKUP_FOLDER_SUBLIME="$BACKUP_FOLDER/sublime_3"
 SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 3/Packages"
 
 function run {
-  create_folders
   backup_dotfiles
   backup_sublime
 }
 
-function create_folders {
-  mkdir -p $BACKUP_FOLDER/dotfiles
-  mkdir -p $BACKUP_FOLDER/sublime_3
-}
-
 function backup_dotfiles {
-  FILES=('.zshrc' '.bash_aliases' '.bash_env' '.vimrc' '.tmux.conf' '.gitconfig' '.gitignore' '.rubocop.yml')
+  rm -rf $BACKUP_FOLDER_DOTFILES
+  mkdir -p $BACKUP_FOLDER_DOTFILES
+
+  FILES=(
+    '.aliases'
+    '.env'
+    '.gitconfig'
+    '.gitignore'
+    '.rubocop.yml'
+    '.tmux.conf'
+    '.vimrc'
+    '.zshrc'
+  )
 
   for file in "${FILES[@]}"; do
-    cp $HOME/$file $BACKUP_FOLDER/dotfiles
+    cp $HOME/$file $BACKUP_FOLDER_DOTFILES
   done
 }
 
 function backup_sublime {
-  rm -rf $BACKUP_FOLDER/Sublime_3
-  mkdir -p $BACKUP_FOLDER/Sublime_3/User
+  rm -rf $BACKUP_FOLDER_SUBLIME
+  mkdir -p $BACKUP_FOLDER_SUBLIME/User
 
-  cp -r $SUBLIME_PACKAGES/Themes $BACKUP_FOLDER/Sublime_3
+  cp -r "$SUBLIME_PACKAGES/Themes" $BACKUP_FOLDER_SUBLIME
 
   # copy all folders
-  find $SUBLIME_PACKAGES/User/* -maxdepth 0 -type d -exec cp -r {} $BACKUP_FOLDER/Sublime_3/User \;
+  find "$SUBLIME_PACKAGES/User/"* -maxdepth 0 -type d -exec cp -r {} $BACKUP_FOLDER_SUBLIME/User \;
   # copy all sublime-settings files
-  cp $SUBLIME_PACKAGES/User/*.sublime-settings $BACKUP_FOLDER/Sublime_3/User/
+  cp "$SUBLIME_PACKAGES/User/"*.sublime-settings $BACKUP_FOLDER_SUBLIME/User/
   # copy other files
-  cp $SUBLIME_PACKAGES/User/*.sublime-keymap $SUBLIME_PACKAGES/User/*.json $BACKUP_FOLDER/Sublime_3/User/
+  cp "$SUBLIME_PACKAGES/User/"*.sublime-keymap  "$SUBLIME_PACKAGES/User/"*.json "$BACKUP_FOLDER_SUBLIME/User/"
 
-  rm -rf $BACKUP_FOLDER/Sublime_3/User/Color\ Highlighter
+  rm -rf $BACKUP_FOLDER_SUBLIME/User/Color\ Highlighter
 }
 
 $@

@@ -6,7 +6,7 @@ function install {
   rm -f $HOME/hosts_bak
   rm -f $HOME/REQUIRE
 
-  source $HOME/.bash_aliases
+  source $HOME/.aliases
 }
 
 $@

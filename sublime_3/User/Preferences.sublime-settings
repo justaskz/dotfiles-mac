@@ -60,6 +60,7 @@
 	"font_size": 16,
 	"ignored_packages":
 	[
+		"Git",
 		"Vintage"
 	],
 	"index_exclude_patterns":
@@ -73,6 +74,7 @@
 	"index_files": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 2,
+	"mini_diff": false,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
@@ -81,6 +83,7 @@
 	],
 	"save_on_focus_lost": true,
 	"show_definitions": false,
+	"show_git_status": false,
 	"show_panel_on_build": false,
 	"tab_size": 2,
 	"theme": "Soda Dark 3.sublime-theme",
