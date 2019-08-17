@@ -39,6 +39,7 @@ alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"
 alias psa="ps xw | grep"
 alias untar="tar xvzf"
 alias genv="env | grep"
+alias ls="ls -lah --color"
 
 #################################################
 ## HEROKU
@@ -74,3 +75,31 @@ alias repos="cd ~/repos"
 alias notes="cd ~/repos/notes"
 alias dropbox_home="cd ~/Dropbox"
 alias sublime_home="cd \"$HOME/Library/Application Support/Sublime Text 3\""
+
+#################################################
+## UNALIAS OH-MY-ZSH ALIASES
+#################################################
+unalias '...'
+unalias '....'
+unalias '.....'
+unalias '......'
+unalias 1
+unalias 2
+unalias 3
+unalias 4
+unalias 5
+unalias 6
+unalias 7
+unalias 8
+unalias 9
+unalias md
+unalias rd
+unalias lsa
+unalias l
+unalias ll
+unalias la
+# unalias grep
+unalias history
+unalias _
+unalias afind
+# unalias ls

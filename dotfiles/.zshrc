@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-source $HOME/.env
-source $HOME/.aliases
-
 # environmebt mount
 if hash rbenv 2>/dev/null; then
   eval "$(rbenv init - zsh)"
@@ -32,7 +29,7 @@ export ZSH_THEME="spaceship"
 CASE_SENSITIVE="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM="$HOME/.oh-my-zsh-custom"
+export ZSH_CUSTOM="$HOME/.oh-my-zsh-custom"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -43,3 +40,6 @@ source $ZSH/oh-my-zsh.sh
 
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_PROMPT_ORDER=(dir git exec_time line_sep jobs exit_code char)
+
+source $HOME/.env
+source $HOME/.aliases
