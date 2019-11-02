@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 
-# environmebt mount
-if hash rbenv 2>/dev/null; then
-  eval "$(rbenv init - zsh)"
-fi
-
-if hash pyenv 2>/dev/null; then
-  eval "$(pyenv init -)"
-fi
+ulimit -n 1024
 
 # makes VIM work with ctrl
 stty -ixon -ixoff
@@ -43,3 +36,12 @@ SPACESHIP_PROMPT_ORDER=(dir git exec_time line_sep jobs exit_code char)
 
 source $HOME/.env
 source $HOME/.aliases
+
+# environmebt mount
+if hash rbenv 2>/dev/null; then
+  eval "$(rbenv init -)"
+fi
+
+if hash pyenv 2>/dev/null; then
+  eval "$(pyenv init -)"
+fi

@@ -1,5 +1,7 @@
+.PHONY: backup install
+
 help:
-	@ echo 'make backup or make install'
+	@ echo 'run "make backup" or "make install"'
 
 backup:
 	@ bash backup run

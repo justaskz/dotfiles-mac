@@ -619,26 +619,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.78853243487167202</real>
+				<real>0.80372506380081177</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.36762172356247902</real>
+				<real>0.42216140031814575</real>
 				<key>Red Component</key>
-				<real>0.954345703125</real>
+				<real>0.934814453125</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.930389404296875</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.78770124832434352</real>
+				<real>0.98074567317962646</real>
 				<key>Red Component</key>
-				<real>0.34774610074236989</real>
+				<real>0.01263427734375</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -697,26 +697,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.792156862745098</real>
+				<real>0.80000001192092896</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.36470588235294116</real>
+				<real>0.41960784792900085</real>
 				<key>Red Component</key>
-				<real>0.95294117647058818</real>
+				<real>0.93333333730697632</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.92941176470588238</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.78823529411764703</real>
+				<real>0.98039215803146362</real>
 				<key>Red Component</key>
-				<real>0.34509803921568627</real>
+				<real>0.015686275437474251</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -1392,6 +1392,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>4</integer>
 			<key>Title Components</key>
 			<integer>34</integer>
 			<key>Transparency</key>
@@ -1406,10 +1408,14 @@
 			<true/>
 			<key>Use Canonical Parser</key>
 			<false/>
+			<key>Use Cursor Guide</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Tab Color</key>
 			<true/>
+			<key>Use Underline Color</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1.05</real>
 			<key>Visual Bell</key>
@@ -1442,7 +1448,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{337, 702}</string>
+		<string>{381, 636}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1453,7 +1459,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>579103631.24686503</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>103</integer>
+	<integer>130</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2266,7 +2272,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-27T11:15:38Z</date>
+	<date>2019-11-20T18:48:49Z</date>
+	<key>SUSkippedVersion</key>
+	<string>3.3.7</string>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2292,9 +2300,9 @@
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>SwitchTabModifier</key>
-	<integer>4</integer>
+	<integer>9</integer>
 	<key>SwitchWindowModifier</key>
-	<integer>6</integer>
+	<integer>9</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>6</integer>
 	<key>TabViewType</key>

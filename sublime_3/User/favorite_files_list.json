@@ -1,5 +1,8 @@
 {
   "files": [
+    //-----------------------------------------------
+    // CONFIG FILES
+    //-----------------------------------------------
     {
       "alias": ".env",
       "file": "/Users/justas/.env"
@@ -17,14 +20,6 @@
       "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
     },
     {
-      "alias": "_Default (OSX).sublime-keymap",
-      "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/_Default (OSX).sublime-keymap"
-    },
-    {
-      "alias": "Preferences.sublime-settings",
-      "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
-    },
-    {
       "alias": ".vimrc",
       "file": "/Users/justas/.vimrc"
     },
@@ -37,12 +32,28 @@
       "file": "/Users/justas/.zshrc"
     },
     {
+      "alias": "Preferences.sublime-settings",
+      "file": "/Users/justas/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+    },
+
+    //-----------------------------------------------
+    // OTHER
+    //-----------------------------------------------
+    {
       "alias": "books index",
       "file": "/Users/justas/repos/notes/learn/books/index.org"
     },
     {
       "alias": "tasks.org",
       "file": "/Users/justas/repos/notes/work/tasks.org"
+    },
+
+    //-----------------------------------------------
+    // NOTES
+    //-----------------------------------------------
+    {
+      "alias": "unix",
+      "file": "/Users/justas/repos/notes/dev/unix"
     },
     {
       "alias": "bash",
@@ -51,7 +62,23 @@
     {
       "alias": "brew",
       "file": "/Users/justas/repos/notes/dev/brew"
-    }
+    },
+    {
+      "alias": "npm",
+      "file": "/Users/justas/repos/notes/dev/npm"
+    },
+    {
+      "alias": "vim",
+      "file": "/Users/justas/repos/notes/dev/vim",
+    },
+    {
+      "alias": "regex",
+      "file": "/Users/justas/repos/notes/dev/regex",
+    },
+    {
+      "alias": "mysql",
+      "file": "/Users/justas/repos/notes/dev/mysql",
+    },
   ],
   "groups": {},
   "version": 2

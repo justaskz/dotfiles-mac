@@ -5,19 +5,27 @@
 " colorscheme monokai
 " let g:molokai_original = 1
 
+" syntax highlighting
 syntax on
 
+" auto refresh file
+set autoread
+
+" convert tabs to spaces
 set expandtab
-set shiftwidth=2
-set softtabstop=2
 
 " show line numbers
 set number
-set nobackup
-set noswapfile
 
-" Remove trailing whitespaces
+" remove trailing whitespaces
 autocmd BufWritePre *.* :%s/\s\+$//e
+
+" set 2 spaces for tab
+set shiftwidth=2
+set softtabstop=2
+
+" no backuping file on every file save
+set nobackup
 
 " Start in insert mode
 " au BufRead,BufNewFile * start
@@ -26,6 +34,7 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+
 "------------------------------------------------
 "                     VUNDLE
 "------------------------------------------------
@@ -41,7 +50,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on

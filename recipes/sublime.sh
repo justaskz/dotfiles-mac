@@ -6,7 +6,7 @@ function install {
   brew install wget
 
   config
-  install_ctags
+  # install_ctags
 }
 
 function config {
