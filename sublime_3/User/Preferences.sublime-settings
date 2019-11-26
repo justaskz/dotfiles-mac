@@ -34,7 +34,8 @@
 		"*.scssc",
 		"*.rdb",
 		"core_snippets.rb",
-		"*.svg"
+		"*.svg",
+		"*package-lock.json*"
 	],
 	"folder_exclude_patterns":
 	[

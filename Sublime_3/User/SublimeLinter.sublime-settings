@@ -18,7 +18,7 @@
       ]
     },
     {
-      "mark_style": "fill",
+      "mark_style": "solid_underline",
       "priority": 0,
       "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
       "icon": "pointer",
@@ -30,6 +30,9 @@
   "linters": {
     "rubocop": {
       "excludes": ["*.cnf", "*Vagrantfile"]
+    },
+    "tslint": {
+      "lint_mode": "load_save",
     }
   }
 }

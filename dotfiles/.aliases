@@ -40,6 +40,7 @@ alias psa="ps xw | grep"
 alias untar="tar xvzf"
 alias genv="env | grep"
 alias ls="ls -lah --color"
+alias vim_install="vim +PluginInstall +qall"
 
 #################################################
 ## HEROKU
@@ -76,6 +77,7 @@ alias notes="cd ~/repos/notes"
 alias dot="cd ~/repos/dotfiles-mac"
 alias dropbox_home="cd ~/Dropbox"
 alias sublime_home="cd \"$HOME/Library/Application Support/Sublime Text 3\""
+alias code="$VSCODE_HOME/code"
 
 #################################################
 ## UNALIAS OH-MY-ZSH ALIASES

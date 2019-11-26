@@ -20,12 +20,6 @@
   { "keys": ["alt+left"], "command": "move_to", "args": { "to": "bol", "extend": false }},
   { "keys": ["alt+right"], "command": "move_to", "args": { "to": "eol", "extend": false }},
 
-
-  // CTRL
-  //
-  //
-
-
   // SHIFT
   // Select a line
   // [Shift+up|down]: Works by default
@@ -47,22 +41,63 @@
 
   // ALT + SHIFT
   // Expand multiple cursors up and down
-  { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
-  { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["alt+shift+up"], "command": "select_lines", "args": { "forward": false }},
+  { "keys": ["alt+shift+down"], "command": "select_lines", "args": { "forward": true }},
   // Select whole line
   { "keys": ["alt+shift+left"], "command": "move_to", "args": { "to": "bol", "extend": true }},
   { "keys": ["alt+shift+right"], "command": "move_to", "args": { "to": "eol", "extend": true }},
 
+  //-----------------------------------------------
+  // VIM STYLE
+  //-----------------------------------------------
 
-  // CTRL +SHIFT
-  //
-  //
+  // Move cursor
+  { "keys": ["ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false }},
+  { "keys": ["ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true }},
+  { "keys": ["ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false }},
+  { "keys": ["ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true }},
 
+  // Scroll up and down
+  { "keys": ["super+ctrl+k"], "command": "scroll_lines", "args": { "amount": 1.0 }},
+  { "keys": ["super+ctrl+j"], "command": "scroll_lines", "args": { "amount": -1.0 }},
 
+  // Jump through words
+  { "keys": ["super+ctrl+h"], "command": "move", "args": { "by": "subwords", "forward": false }},
+  { "keys": ["super+ctrl+l"], "command": "move", "args": { "by": "subwords", "forward": true }},
+
+  // Move lines up and down
+  { "keys": ["alt+ctrl+k"], "command": "swap_line_up" },
+  { "keys": ["alt+ctrl+j"], "command": "swap_line_down" },
+
+  // Move cursor to start or end of the line
+  { "keys": ["alt+ctrl+h"], "command": "move_to", "args": { "to": "bol", "extend": false }},
+  { "keys": ["alt+ctrl+l"], "command": "move_to", "args": { "to": "eol", "extend": false }},
+
+  // Select a line
+  { "keys": ["shift+ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false, "extend": true }},
+  { "keys": ["shift+ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true, "extend": true }},
+
+  // Select character
+  { "keys": ["shift+ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false, "extend": true }},
+  { "keys": ["shift+ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true, "extend": true }},
+
+  // Select between brackets
+  { "keys": ["super+shift+ctrl+k"], "command": "expand_selection", "args": { "to": "brackets" }},
+  // Select between commas
+  { "keys": ["super+shift+ctrl+j"], "command": "select_quoted" },
+
+  // Expand multiple cursors up and down
+  { "keys": ["alt+shift+ctrl+k"], "command": "select_lines", "args": { "forward": false }},
+  { "keys": ["alt+shift+ctrl+j"], "command": "select_lines", "args": { "forward": true }},
+
+  // Select whole line
+  { "keys": ["alt+shift+ctrl+h"], "command": "move_to", "args": { "to": "bol", "extend": true }},
+  { "keys": ["alt+shift+ctrl+l"], "command": "move_to", "args": { "to": "eol", "extend": true }},
 
   //-----------------------------------------------
   // OTHER
   //-----------------------------------------------
+
   // New line
   { "keys": ["command+enter"], "command": "run_macro_file",
     "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }},
@@ -70,8 +105,6 @@
   { "keys": ["command+space", "command+c"], "command": "copy_path" },
   // Select a line
   { "keys": ["command+e"], "command": "expand_selection", "args": { "to": "line" }},
-  // Go to line
-  { "keys": ["alt+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
   // Go to document start
   { "keys": ["command+space", "command+up"], "command": "move_to", "args": { "to": "bof", "extend": false }},
@@ -79,19 +112,18 @@
   { "keys": ["command+space", "command+down"], "command": "move_to", "args": { "to": "eof", "extend": false }},
   // Go to line
   { "keys": ["command+g"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" }},
-
+  // Right delete
+  { "keys": ["ctrl+backspace"], "command": "right_delete" },
+  // Right delete word
+  { "keys": ["alt+shift+backspace"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+  // Go to definition
+  { "keys": ["super+space", "super+t", "super+t"], "command": "goto_definition" },
 
   //-----------------------------------------------
   //
   // PLUGINS
   //
   //-----------------------------------------------
-
-  //-----------------------------------------------
-  // CTags
-  //-----------------------------------------------
-  { "keys": ["command+t", "command+t"], "command": "navigate_to_definition" },
-  { "keys": ["command+t", "command+r"], "command": "rebuild_tags" },
 
   // Open favorite files list
   { "keys": ["command+space", "command+f"], "command": "favorite_files_open" },
@@ -106,6 +138,7 @@
   //-----------------------------------------------
   // SIDEBAR
   //-----------------------------------------------
+
   // Disable open file
   { "keys": ["command+o"], "command": "false" },
   // Disable quiting

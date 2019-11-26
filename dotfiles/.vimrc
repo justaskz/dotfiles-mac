@@ -5,6 +5,8 @@
 " colorscheme monokai
 " let g:molokai_original = 1
 
+set backspace=indent,eol,start
+
 " syntax highlighting
 syntax on
 
@@ -50,6 +52,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -58,6 +63,7 @@ filetype plugin indent on
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFocus<CR>
 
 "------------------------------------------------
 "                    Navigation
