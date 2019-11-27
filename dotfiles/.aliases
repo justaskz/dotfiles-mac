@@ -82,27 +82,27 @@ alias code="$VSCODE_HOME/code"
 #################################################
 ## UNALIAS OH-MY-ZSH ALIASES
 #################################################
-unalias '...'
-unalias '....'
-unalias '.....'
-unalias '......'
-unalias 1
-unalias 2
-unalias 3
-unalias 4
-unalias 5
-unalias 6
-unalias 7
-unalias 8
-unalias 9
-unalias md
-unalias rd
-unalias lsa
-unalias l
-unalias ll
-unalias la
+unalias '...' >/dev/null 2>/dev/null
+unalias '....' >/dev/null 2>/dev/null
+unalias '.....' >/dev/null 2>/dev/null
+unalias '......' >/dev/null 2>/dev/null
+unalias 1 >/dev/null 2>/dev/null
+unalias 2 >/dev/null 2>/dev/null
+unalias 3 >/dev/null 2>/dev/null
+unalias 4 >/dev/null 2>/dev/null
+unalias 5 >/dev/null 2>/dev/null
+unalias 6 >/dev/null 2>/dev/null
+unalias 7 >/dev/null 2>/dev/null
+unalias 8 >/dev/null 2>/dev/null
+unalias 9 >/dev/null 2>/dev/null
+unalias md >/dev/null 2>/dev/null
+unalias rd >/dev/null 2>/dev/null
+unalias lsa >/dev/null 2>/dev/null
+unalias l >/dev/null 2>/dev/null
+unalias ll >/dev/null 2>/dev/null
+unalias la >/dev/null 2>/dev/null
+unalias history >/dev/null 2>/dev/null
+unalias _ >/dev/null 2>/dev/null
+unalias afind >/dev/null 2>/dev/null
 # unalias grep
-unalias history
-unalias _
-unalias afind
 # unalias ls

@@ -32,7 +32,7 @@ function config {
 }
 
 function install_ctags {
-  brew install ctags
+  # brew install ctags
 
   # do it manually after installing latest ruby
   # gem install ripper-tags
