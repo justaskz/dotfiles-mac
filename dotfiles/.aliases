@@ -39,7 +39,8 @@ alias searchin="fgrep --exclude-dir=.meteor --exclude-dir=.git -irn"
 alias psa="ps xw | grep"
 alias untar="tar xvzf"
 alias genv="env | grep"
-alias ls="ls -lah --color"
+unalias ls >/dev/null 2>/dev/null
+alias ls="ls -lahG"
 alias vim_install="vim +PluginInstall +qall"
 
 #################################################
@@ -105,4 +106,3 @@ unalias history >/dev/null 2>/dev/null
 unalias _ >/dev/null 2>/dev/null
 unalias afind >/dev/null 2>/dev/null
 # unalias grep
-# unalias ls

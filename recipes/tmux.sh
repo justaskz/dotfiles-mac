@@ -11,11 +11,14 @@ function install_old_version {
   TMUX_PATH="$HOME/opt/tmux"
   rm -rf $TMUX_PATH
 
+  brew install automake
   git clone git@github.com:tmux/tmux.git "$TMUX_PATH"
   cd "$TMUX_PATH"
-  git checkout 1.9a
-  ./autogen.sh
-  ./configure && make
+  git checkout 2.8
+  sh autogen.sh
+  sh configure && make
+  mkdir -p bin
+  cp tmux bin
 }
 
 function cpu_monitor {
