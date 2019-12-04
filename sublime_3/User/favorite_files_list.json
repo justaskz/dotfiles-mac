@@ -60,6 +60,10 @@
       "file": "/Users/justas/repos/notes/dev/bash"
     },
     {
+      "alias": "git",
+      "file": "/Users/justas/repos/notes/dev/git"
+    },
+    {
       "alias": "brew",
       "file": "/Users/justas/repos/notes/dev/brew"
     },

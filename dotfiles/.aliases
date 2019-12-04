@@ -40,7 +40,7 @@ alias psa="ps xw | grep"
 alias untar="tar xvzf"
 alias genv="env | grep"
 unalias ls >/dev/null 2>/dev/null
-alias ls="ls -lahG"
+alias ls="ls -lah --color"
 alias vim_install="vim +PluginInstall +qall"
 
 #################################################
