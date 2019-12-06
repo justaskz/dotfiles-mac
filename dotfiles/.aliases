@@ -106,3 +106,19 @@ unalias history >/dev/null 2>/dev/null
 unalias _ >/dev/null 2>/dev/null
 unalias afind >/dev/null 2>/dev/null
 # unalias grep
+
+#################################################
+## FUNCTIONS
+#################################################
+
+function ssh-login-tesonet {
+  ssh-add ~/.ssh/tesonet_rsa
+}
+
+function ssh-login-github {
+  ssh-add ~/.ssh/github_rsa
+}
+
+function ssh-login-kubilas {
+  ssh-add ~/.ssh/kubilas_rsa
+}
