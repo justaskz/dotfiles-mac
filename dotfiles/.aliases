@@ -41,12 +41,6 @@ alias untar="tar xvzf"
 alias genv="env | grep"
 unalias ls >/dev/null 2>/dev/null
 alias ls="ls -lah --color"
-alias vim_install="vim +PluginInstall +qall"
-
-#################################################
-## HEROKU
-#################################################
-alias h="heroku"
 
 #################################################
 ## RAILS
@@ -111,14 +105,18 @@ unalias afind >/dev/null 2>/dev/null
 ## FUNCTIONS
 #################################################
 
-function ssh-login-tesonet {
+function ssh-add-tesonet {
   ssh-add ~/.ssh/tesonet_rsa
 }
 
-function ssh-login-github {
+function ssh-add-github {
   ssh-add ~/.ssh/github_rsa
 }
 
-function ssh-login-kubilas {
+function ssh-add-kubilas {
   ssh-add ~/.ssh/kubilas_rsa
+}
+
+function clear_histories {
+  find $HOME/ -maxdepth 1 -type f | grep _history | xargs rm
 }

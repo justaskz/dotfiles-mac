@@ -1,43 +1,4 @@
 "------------------------------------------------
-"                 BASIC SETTINGS
-"------------------------------------------------
-" Font "
-" colorscheme monokai
-" let g:molokai_original = 1
-
-set backspace=indent,eol,start
-
-" syntax highlighting
-syntax on
-
-" auto refresh file
-set autoread
-
-" convert tabs to spaces
-set expandtab
-
-" show line numbers
-set number
-
-" remove trailing whitespaces
-autocmd BufWritePre *.* :%s/\s\+$//e
-
-" set 2 spaces for tab
-set shiftwidth=2
-set softtabstop=2
-
-" no backuping file on every file save
-set nobackup
-
-" Start in insert mode
-" au BufRead,BufNewFile * start
-
-" set laststatus=2
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-
-"------------------------------------------------
 "                     VUNDLE
 "------------------------------------------------
 set nocompatible
@@ -48,18 +9,94 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Plugins to install
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'elixir-editors/vim-elixir'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+Plugin 'arcticicestudio/nord-vim'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdcommenter'
+" Plugin 'junegunn/fzf'
+" Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on
 
+"-----------------------------------------------
+"                      MISC
+"-----------------------------------------------
 
+" Make backspace work
+set backspace=indent,eol,start
+
+" show command in bottom bar (powerline)
+set showcmd
+
+" load filetype-specific indent files
+filetype indent on
+
+" visual autocomplete for command menu
+set wildmenu
+
+" redraw only when we need to.
+set lazyredraw
+
+" auto refresh file
+" set autoread
+
+" no backuping file on every file save
+" set nobackup
+
+"-----------------------------------------------
+"                     LOOKS
+"-----------------------------------------------
+
+" set termguicolors
+
+" set colorscheme
+colorscheme nord
+
+" let g:rehash256 = 1
+
+" enable syntax highlighting
+syntax on
+
+" show line numbers
+set number
+
+"-----------------------------------------------
+"                     LINES
+"-----------------------------------------------
+
+" convert tabs to spaces
+set expandtab
+
+" remove trailing whitespaces
+autocmd BufWritePre *.* :%s/\s\+$//e
+
+" set 2 spaces for tab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+
+"-----------------------------------------------
+"                    SEARCH
+"-----------------------------------------------
+
+" search as characters are entered
+set incsearch
+
+" highlight matches
+set hlsearch
+
+" Start in insert mode
+" au BufRead,BufNewFile * start
+
+" set laststatus=2
+" let g:airline#extensions#tabline#enabled = 0
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+
+"-------------------------------------------------
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 map <C-n> :NERDTreeToggle<CR>
@@ -84,13 +121,14 @@ map <C-f> :NERDTreeFocus<CR>
 " inoremap <M-down> <Esc>ddjPi
 
 " Jump to the start of line Alt-left
-nnoremap <Esc>h <Esc>^
-inoremap <Esc>h <Esc>^i
-inoremap <M-left> <Esc>^i
+" nnoremap <Esc>h <Esc>^
+" inoremap <Esc>h <Esc>^i
+" inoremap <M-left> <Esc>^i
+
 " Jump to the end of line Alt-right
-nnoremap <Esc>l $
-inoremap <Esc>l <Esc>$i
-inoremap <M-right> <Esc>$i
+" nnoremap <Esc>l $
+" inoremap <Esc>l <Esc>$i
+" inoremap <M-right> <Esc>$i
 
 " Select in line Shift-left
 " Visual mode
@@ -105,18 +143,18 @@ inoremap <M-right> <Esc>$i
 nnoremap q <NOP>
 
 " quit Alt-q
-nnoremap <C-q> :q!<CR>
-inoremap <C-q> <Esc>:q!<CR>
+" nnoremap <C-q> :q!<CR>
+" inoremap <C-q> <Esc>:q!<CR>
 
 " save Ctrl-s
-nnoremap <C-s> :w<CR>
-inoremap <C-s> <Esc>:w<CR>i
+" nnoremap <C-s> :w<CR>
+" inoremap <C-s> <Esc>:w<CR>i
 
 "------------------------------------------------
 " Other
 "------------------------------------------------
 " autocomplete
-inoremap <Tab> <C-p>
+" inoremap <Tab> <C-p>
 
 " let g:ConqueTerm_SendVisKey = 'l'
 
@@ -129,8 +167,8 @@ inoremap <Tab> <C-p>
 " nnoremap o :ConqueTerm R<CR>
 
 " refresh file
-nnoremap <Esc>re :e<CR>
-inoremap <Esc>re <Esc>:e<CR>i
+" nnoremap <Esc>re :e<CR>
+" inoremap <Esc>re <Esc>:e<CR>i
 
 " open explorer
-nnoremap <Esc>e :Explore<CR>
+" nnoremap <Esc>e :Explore<CR>

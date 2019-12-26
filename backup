@@ -30,6 +30,7 @@ function backup_dotfiles {
     '.tmux.conf'
     '.vimrc'
     '.zshrc'
+    '.config/starship.toml'
   )
 
   for file in "${FILES[@]}"; do

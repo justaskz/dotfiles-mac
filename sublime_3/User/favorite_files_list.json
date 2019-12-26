@@ -40,18 +40,25 @@
     // OTHER
     //-----------------------------------------------
     {
+      "alias": "personal tasks.org",
+      "file": "/Users/justas/repos/notes/tasks.org",
+    },
+    {
       "alias": "books index",
       "file": "/Users/justas/repos/notes/learn/books/index.org"
     },
+
+    //-----------------------------------------------
+    // WORK
+    //-----------------------------------------------
     {
-      "alias": "tasks.org",
+      "alias": "work tasks.org",
       "file": "/Users/justas/repos/notes/work/tesonet/tasks.org"
     },
     {
       "alias": "snippets.sh",
       "file": "/Users/justas/repos/notes/work/tesonet/snippets.sh"
     },
-
     //-----------------------------------------------
     // NOTES
     //-----------------------------------------------
@@ -62,6 +69,10 @@
     {
       "alias": "bash",
       "file": "/Users/justas/repos/notes/dev/bash"
+    },
+    {
+      "alias": "git",
+      "file": "/Users/justas/repos/notes/dev/git"
     },
     {
       "alias": "brew",
@@ -94,7 +105,7 @@
     {
       "alias": "galera",
       "file": "/Users/justas/repos/notes/dev/galera",
-    }
+    },
   ],
   "groups": {},
   "version": 2

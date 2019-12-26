@@ -16,7 +16,9 @@
 		"*.swf",
 		"*.jar",
 		"*.zip",
-		"core/db/migrates/*.rb"
+		"*.deb",
+		"core/db/migrates/*.rb",
+		"tmp/*"
 	],
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
@@ -33,7 +35,6 @@
 		"*.js.map",
 		"*.scssc",
 		"*.rdb",
-		"core_snippets.rb",
 		"*.svg",
 		"*package-lock.json*"
 	],
@@ -49,13 +50,10 @@
 		".shards",
 		"tmp/cache",
 		"webpack",
-		"tmp",
 		"libs",
 		"certs",
 		"Package Control.cache",
-		"coverage",
 		"public/ckeditor",
-		"core/vendor/assets",
 		".vagrant"
 	],
 	"font_face": "Courier New",
@@ -71,7 +69,7 @@
 		".gitkeep",
 		"node_modules",
 		"bower_components",
-		"tmp"
+		"tmp/*"
 	],
 	"index_files": true,
 	"line_padding_bottom": 3,
