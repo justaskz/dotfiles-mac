@@ -43,13 +43,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.12549020349979401</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0096160909160971642</real>
+				<real>0.12549020349979401</real>
 				<key>Red Component</key>
-				<real>0.031955186277627945</real>
+				<real>0.12549020349979401</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -225,13 +225,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40775242447853088</real>
+				<real>0.12549020349979401</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.41995549201965332</real>
+				<real>0.12549020349979401</real>
 				<key>Red Component</key>
-				<real>0.43650126457214355</real>
+				<real>0.12549020349979401</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -556,13 +556,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12549019607843137</real>
+				<real>0.12549020349979401</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12549019607843137</real>
+				<real>0.12549020349979401</real>
 				<key>Red Component</key>
-				<real>0.12549019607843137</real>
+				<real>0.12549020349979401</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -738,13 +738,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12549019607843137</real>
+				<real>0.12549020349979401</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12549019607843137</real>
+				<real>0.12549020349979401</real>
 				<key>Red Component</key>
-				<real>0.12549019607843137</real>
+				<real>0.12549020349979401</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -1539,11 +1539,11 @@
 	<key>NoSyncLastTipTime</key>
 	<real>579103631.24686503</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>163</integer>
+	<integer>169</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>578782642.812114</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2357,7 +2357,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-12T18:12:22Z</date>
+	<date>2019-12-26T19:15:39Z</date>
 	<key>SUSkippedVersion</key>
 	<string>3.3.7</string>
 	<key>SUUpdateRelaunchingMarker</key>

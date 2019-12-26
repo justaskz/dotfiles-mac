@@ -31,9 +31,6 @@ set backspace=indent,eol,start
 " show command in bottom bar (powerline)
 set showcmd
 
-" load filetype-specific indent files
-filetype indent on
-
 " visual autocomplete for command menu
 set wildmenu
 
@@ -50,10 +47,18 @@ set lazyredraw
 "                     LOOKS
 "-----------------------------------------------
 
-" set termguicolors
+" set true colors
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+" background
+set background=light
 
 " set colorscheme
-" colorscheme nord
+colorscheme default
 
 " let g:rehash256 = 1
 
@@ -62,6 +67,12 @@ syntax on
 
 " show line numbers
 set number
+
+" show position
+set ruler
+
+" line numbers gutter width
+set numberwidth=7
 
 "-----------------------------------------------
 "                     LINES
