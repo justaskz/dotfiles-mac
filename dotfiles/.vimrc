@@ -53,7 +53,7 @@ set lazyredraw
 " set termguicolors
 
 " set colorscheme
-colorscheme nord
+" colorscheme nord
 
 " let g:rehash256 = 1
 

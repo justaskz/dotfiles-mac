@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# URL="https://someonewhocares.org/hosts/hosts"
-URL="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
+URL="https://someonewhocares.org/hosts/hosts"
+# URL="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
 
 function install {
   DEFAULT_FILE="presets/hosts"

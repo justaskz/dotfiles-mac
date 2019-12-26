@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+function run {
+  bash recipes/dotfiles.sh install
+  bash recipes/sublime.sh move_settings_files
+}
+
+$@
