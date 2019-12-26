@@ -6,10 +6,10 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
-		"Ansible",
 		"BracketHighlighter",
 		"ColorSchemeSelector",
 		"Crystal",
+		"Dockerfile Syntax Highlighting",
 		"Elixir",
 		"Expand Selection to Quotes",
 		"FavoriteFiles",
