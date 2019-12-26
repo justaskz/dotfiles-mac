@@ -1539,7 +1539,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>579103631.24686503</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>151</integer>
+	<integer>163</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2274,6 +2274,11 @@
 	</dict>
 	<key>NoSyncSaveDocumentAsPathSet_saveDocumentAs:</key>
 	<true/>
+	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
+	<dict>
+		<key>Initial Directory</key>
+		<string>/Users/justas/repos/dotfiles-mac/presets</string>
+	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>509154703.12639397</real>
 	<key>NoSyncTimeOfLastPromo</key>
