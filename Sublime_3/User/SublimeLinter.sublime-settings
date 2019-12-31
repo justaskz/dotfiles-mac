@@ -1,11 +1,11 @@
 // SublimeLinter Settings - User
 {
-  "show_hover_line_report": false,
-  "show_hover_region_report": false,
   "debug": false,
+  "show_hover_line_report": true,
+  "show_hover_region_report": false,
   "gutter_theme": "Default",
   "paths":{
-    "osx": ["~/.rbenv/shims"]
+    "osx": ["~/.rbenv/shims", "~/.pyenv/shims"]
   },
   "styles": [
     {
@@ -30,9 +30,6 @@
   "linters": {
     "rubocop": {
       "excludes": ["*.cnf", "*Vagrantfile"]
-    },
-    "tslint": {
-      "lint_mode": "load_save",
     }
   }
 }

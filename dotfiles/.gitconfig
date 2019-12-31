@@ -5,6 +5,8 @@
 	required = true
 [user]
 	name = Justas Kazakauskas
-	email = justas.kazakauskas@gmail.com
+  email = justas.kazakauskas@gmail.com
 [core]
 	excludesfile = ~/.gitignore
+[includeIf "gitdir:/Users/t1028/repos/ansible/"]
+  path = ~/.gitconfig-tesonet

@@ -14,6 +14,7 @@ function install {
 function update_mysql_configuration() {
   MYSQL_CONFIG_FILE='/etc/mysql/my.cnf'
 
+  sudo mkdir -p /etc/mysql
   sudo rm -rf $MYSQL_CONFIG_FILE
 
   echo "[client]

@@ -122,5 +122,9 @@ function clear_histories {
 }
 
 function ssh-login-dzeus {
-  ssh -A -t ansible@ansible.mountaininfra.net "cd /home/ansible/dev-justas/ansible; /bin/bash --rcfile /home/ansible/dev-justas/.profile"
+  ssh -A -t ansible@ansible.mountaininfra.net "cd /home/justas; su justas"
+}
+
+function ssh-login-dzeus-ansible {
+  ssh -A -t ansible@ansible.mountaininfra.net "cd /home/justas/repos/ansible; /bin/bash --rcfile /home/justas/.env"
 }

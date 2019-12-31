@@ -3,7 +3,7 @@
 INSTALL_PATH="$HOME/opt/vowpal_wabbit"
 
 function install {
-  install_dependencies()
+  install_dependencies
 
   git clone git@github.com:JohnLangford/vowpal_wabbit.git $INSTALL_PATH
 
