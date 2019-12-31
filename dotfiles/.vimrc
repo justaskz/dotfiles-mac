@@ -54,9 +54,6 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-" background
-set background=light
-
 " set colorscheme
 colorscheme default
 

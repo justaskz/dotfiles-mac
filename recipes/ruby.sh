@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function install {
-  VERSION=2.5.1
+  VERSION=2.6.5
 
   # install rbenv
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
