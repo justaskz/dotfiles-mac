@@ -157,6 +157,6 @@
   { "keys": ["command+space", "command+n", "command+f"], "command": "side_bar_new_file" },
   // Move
   { "keys": ["command+space", "command+r", "command+e"], "command": "side_bar_move" },
-  // Delete file or folder
+  // Delete file or directory
   { "keys": ["command+space", "command+r", "command+r"], "command": "side_bar_delete" },
 ]
