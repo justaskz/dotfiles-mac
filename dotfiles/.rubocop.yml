@@ -3,22 +3,21 @@ AllCops:
     - 'vendor/**/*'
     - 'spec/fixtures/**/*'
     - 'tmp/**/*'
-  TargetRubyVersion: 2.5
+
+Documentation:
+  Enabled: false
 
 LineLength:
   Max: 99
 
-Style/Encoding:
-  Enabled: true
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  EnforcedStyle: never
 
-Style/ClassAndModuleChildren:
-  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
 
-Style/MutableConstant:
-  Enabled: false
-
-Documentation:
-  Enabled: false
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
