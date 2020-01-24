@@ -54,13 +54,13 @@
 		"certs",
 		"Package Control.cache",
 		"public/ckeditor",
-		".vagrant"
+		".vagrant",
+		"_history"
 	],
 	"font_face": "Courier New",
 	"font_size": 16,
 	"ignored_packages":
 	[
-		"Git",
 		"Vintage"
 	],
 	"index_exclude_patterns":

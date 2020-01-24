@@ -1,15 +1,14 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Prevent duplicates in command history
-setopt EXTENDED_HISTORY
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
+# setopt EXTENDED_HISTORY
+# setopt HIST_EXPIRE_DUPS_FIRST
+# setopt HIST_IGNORE_DUPS
+# setopt HIST_IGNORE_ALL_DUPS
+# setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
-setopt HIST_SAVE_NO_DUPS
-setopt HIST_BEEP
-
+# setopt HIST_SAVE_NO_DUPS
+# setopt HIST_BEEP
 
 ulimit -n 1024
 
@@ -21,6 +20,7 @@ CASE_SENSITIVE="true"
 
 # ???
 KEYTIMEOUT=.1
+
 #################################################
 ## ZSH CONFIG
 #################################################

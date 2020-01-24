@@ -121,7 +121,7 @@ function clear_histories {
   find $HOME/ -maxdepth 1 -type f | grep _history | xargs rm
 }
 
-function ssh-login-dzeus {
+function ssh-login-dzeus-justas {
   ssh -A -t ansible@ansible.mountaininfra.net "cd /home/justas; su justas"
 }
 

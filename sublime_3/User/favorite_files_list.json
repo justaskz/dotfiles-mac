@@ -95,6 +95,10 @@
       "file": "/Users/justas/repos/notes/dev/mysql",
     },
     {
+      "alias": "mysql_admin",
+      "file": "/Users/justas/repos/notes/dev/mysql_admin",
+    },
+    {
       "alias": "docker",
       "file": "/Users/justas/repos/notes/dev/docker",
     },

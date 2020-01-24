@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 function run {
-  read -p "Please make a backup or you can loose your changes. Continue?" -n 1 -r
+  read -p "Please make a backup or you can loose your changes. Continue? (Y/n)" -n 1 -r
   echo    # (optional) move to a new line
   if [[ $REPLY =~ ^[Yy]$ ]]
   then
+    echo "Refreshing..."
     refresh
   fi
 }
