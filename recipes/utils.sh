@@ -33,7 +33,6 @@ function web {
   npm install -g bower
   npm install -g casperjs
   npm install -g coffee-script
-  npm install -g eslint
   npm install -g jade
   npm install -g jasmine
   npm install -g jasmine-node

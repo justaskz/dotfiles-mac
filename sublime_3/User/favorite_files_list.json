@@ -63,6 +63,10 @@
     // NOTES
     //-----------------------------------------------
     {
+      "alias": "cli",
+      "file": "/Users/justas/repos/notes/dev/cli"
+    },
+    {
       "alias": "unix",
       "file": "/Users/justas/repos/notes/dev/unix"
     },
