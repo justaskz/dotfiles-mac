@@ -117,7 +117,9 @@
   // Right delete word
   { "keys": ["alt+shift+backspace"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
   // Go to definition
-  { "keys": ["super+t", "super+t"], "command": "goto_definition" },
+  { "keys": ["super+space", "super+t", "super+t"], "command": "goto_definition" },
+  // Go to search result
+  { "keys": ["super+space", "super+g"], "command": "prev_result" },
 
   //-----------------------------------------------
   //

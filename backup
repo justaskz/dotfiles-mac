@@ -24,13 +24,15 @@ function backup_dotfiles {
   FILES=(
     '.aliases'
     '.env'
+    '.gemrc'
     '.gitconfig'
+    '.gitconfig-tesonet'
     '.gitignore'
     '.rubocop.yml'
+    '.starship'
     '.tmux.conf'
     '.vimrc'
     '.zshrc'
-    '.starship'
   )
 
   for file in "${FILES[@]}"; do
