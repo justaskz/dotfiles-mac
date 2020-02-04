@@ -2,8 +2,8 @@
 
 function install {
   brew install shellcheck
-  # eslint
-  # ansible
+  npm -g install eslint
+  pip install ansible-lint
   gem install rubocop
 }
 
