@@ -10,7 +10,7 @@ setopt HIST_FIND_NO_DUPS
 # setopt HIST_SAVE_NO_DUPS
 # setopt HIST_BEEP
 
-ulimit -n 1024
+ulimit -n 24000
 
 # makes VIM work with ctrl
 stty -ixon -ixoff

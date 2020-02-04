@@ -40,7 +40,7 @@ alias psa="ps xw | grep"
 alias untar="tar xvzf"
 alias genv="env | grep"
 unalias ls >/dev/null 2>/dev/null
-alias ls="ls -lah --color"
+alias ls="/usr/local/opt/coreutils/libexec/gnubin/ls -lah --color"
 
 #################################################
 ## RAILS
@@ -121,10 +121,10 @@ function clear_histories {
   find $HOME/ -maxdepth 1 -type f | grep _history | xargs rm
 }
 
-function ssh-login-dzeus-justas {
-  ssh -A -t ansible@ansible.mountaininfra.net "cd /home/justas; su justas"
-}
-
 function ssh-login-dzeus-ansible {
   ssh -A -t ansible@ansible.mountaininfra.net "cd /home/justas/repos/ansible; /bin/bash --rcfile /home/justas/.env"
+}
+
+function ssh-login-dzeus-justas {
+  ssh -A justas@ansible.mountaininfra.net
 }

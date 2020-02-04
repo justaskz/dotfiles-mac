@@ -17,8 +17,7 @@
 		"*.jar",
 		"*.zip",
 		"*.deb",
-		"core/db/migrates/*.rb",
-		"tmp/*"
+		"core/db/migrates/*.rb"
 	],
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
@@ -69,7 +68,7 @@
 		".gitkeep",
 		"node_modules",
 		"bower_components",
-		"tmp/*"
+		"tmp/"
 	],
 	"index_files": true,
 	"line_padding_bottom": 3,
