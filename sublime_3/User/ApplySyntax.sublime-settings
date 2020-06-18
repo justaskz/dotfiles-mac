@@ -20,7 +20,10 @@
   "default_syntaxes": [
     {
       "syntax": "Ansible/Ansible",
-      "extensions": ["yml"]
+      "extensions": ["yml"],
+      "rules": [
+        { "first_line": "---" }
+      ]
     },
     {
       "syntax": "YAML/YAML",

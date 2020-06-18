@@ -5,11 +5,11 @@
 
   // COMMAND
   // Scroll up and down
-  { "keys": ["command+up"], "command": "scroll_lines", "args": { "amount": 1.0 }},
-  { "keys": ["command+down"], "command": "scroll_lines", "args": { "amount": -1.0 }},
+  { "keys": ["super+up"], "command": "scroll_lines", "args": { "amount": 1.0 }},
+  { "keys": ["super+down"], "command": "scroll_lines", "args": { "amount": -1.0 }},
   // Jump through words
-  { "keys": ["command+left"], "command": "move", "args": { "by": "subwords", "forward": false }},
-  { "keys": ["command+right"], "command": "move", "args": { "by": "subwords", "forward": true }},
+  { "keys": ["super+left"], "command": "move", "args": { "by": "subwords", "forward": false }},
+  { "keys": ["super+right"], "command": "move", "args": { "by": "subwords", "forward": true }},
 
 
   // ALT
@@ -20,6 +20,7 @@
   { "keys": ["alt+left"], "command": "move_to", "args": { "to": "bol", "extend": false }},
   { "keys": ["alt+right"], "command": "move_to", "args": { "to": "eol", "extend": false }},
 
+
   // SHIFT
   // Select a line
   // [Shift+up|down]: Works by default
@@ -29,13 +30,13 @@
 
   // COMMAND + SHIFT
   // Select between brackets
-  { "keys": ["command+shift+up"], "command": "expand_selection", "args": { "to": "brackets" }},
+  { "keys": ["super+shift+up"], "command": "expand_selection", "args": { "to": "brackets" }},
   // Select between commas
-  { "keys": ["command+shift+down"], "command": "select_quoted" },
+  { "keys": ["super+shift+down"], "command": "select_quoted" },
   // Select a word
-  { "keys": ["command+shift+left"], "command": "move", "args": {
+  { "keys": ["super+shift+left"], "command": "move", "args": {
       "by": "words", "forward": false, "extend": true }},
-  { "keys": ["command+shift+right"], "command": "move", "args": {
+  { "keys": ["super+shift+right"], "command": "move", "args": {
       "by": "word_ends", "forward": true, "extend": true }},
 
 
@@ -99,19 +100,19 @@
   //-----------------------------------------------
 
   // New line
-  { "keys": ["command+enter"], "command": "run_macro_file",
+  { "keys": ["super+enter"], "command": "run_macro_file",
     "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }},
   // Copy file path to clipboard
-  { "keys": ["command+space", "command+c"], "command": "copy_path" },
+  { "keys": ["super+space", "super+c"], "command": "copy_path" },
   // Select a line
-  { "keys": ["command+e"], "command": "expand_selection", "args": { "to": "line" }},
+  { "keys": ["super+e"], "command": "expand_selection", "args": { "to": "line" }},
 
   // Go to document start
-  { "keys": ["command+space", "command+up"], "command": "move_to", "args": { "to": "bof", "extend": false }},
+  { "keys": ["super+space", "super+up"], "command": "move_to", "args": { "to": "bof", "extend": false }},
   // Go to document end
-  { "keys": ["command+space", "command+down"], "command": "move_to", "args": { "to": "eof", "extend": false }},
+  { "keys": ["super+space", "super+down"], "command": "move_to", "args": { "to": "eof", "extend": false }},
   // Go to line
-  { "keys": ["command+g"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" }},
+  { "keys": ["super+g"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" }},
   // Right delete
   { "keys": ["ctrl+backspace"], "command": "right_delete" },
   // Right delete word
@@ -128,37 +129,37 @@
   //-----------------------------------------------
 
   // Open favorite files list
-  { "keys": ["command+space", "command+f"], "command": "favorite_files_open" },
+  { "keys": ["super+space", "super+f"], "command": "favorite_files_open" },
   // Send to Terminal
-  { "keys": ["command+\\"], "command": "send_code" },
+  { "keys": ["super+\\"], "command": "send_code" },
   // Show in sidebar
-  { "keys": ["command+shift+r"], "command": "reveal_in_side_bar" },
+  { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
 
-  { "keys": ["command+shift+["], "command": "do_end_to_brace" },
-  { "keys": ["command+shift+]"], "command": "brace_to_do_end" },
+  { "keys": ["super+shift+["], "command": "do_end_to_brace" },
+  { "keys": ["super+shift+]"], "command": "brace_to_do_end" },
 
   //-----------------------------------------------
   // SIDEBAR
   //-----------------------------------------------
 
   // Disable open file
-  { "keys": ["command+o"], "command": "false" },
+  { "keys": ["super+o"], "command": "false" },
   // Disable quiting
-  { "keys": ["command+q"], "command": "false" },
+  { "keys": ["super+q"], "command": "false" },
   // Toogle sidebar
-  { "keys": ["command+space", "command+o"], "command": "toggle_side_bar" },
+  { "keys": ["super+space", "super+o"], "command": "toggle_side_bar" },
   // Focus sidebar
-  { "keys": ["command+space", "command+d"], "command": "focus_side_bar" },
+  { "keys": ["super+space", "super+d"], "command": "focus_side_bar" },
   // Focus text
-  { "keys": ["command+space", "command+d", "command+f"], "command": "focus_group", "args": { "group": 0 }},
+  { "keys": ["super+space", "super+d", "super+f"], "command": "focus_group", "args": { "group": 0 }},
   // Clear sidebar
-  { "keys": ["command+space", "command+s", "command+c"], "command": "close_folder_list" },
+  { "keys": ["super+space", "super+s", "super+c"], "command": "close_folder_list" },
   // Create new directory
-  { "keys": ["command+space", "command+n", "command+d"], "command": "side_bar_new_directory" },
+  { "keys": ["super+space", "super+n", "super+d"], "command": "side_bar_new_directory" },
   // Create new file
-  { "keys": ["command+space", "command+n", "command+f"], "command": "side_bar_new_file" },
+  { "keys": ["super+space", "super+n", "super+f"], "command": "side_bar_new_file" },
   // Move
-  { "keys": ["command+space", "command+r", "command+e"], "command": "side_bar_move" },
+  { "keys": ["super+space", "super+r", "super+e"], "command": "side_bar_move" },
   // Delete file or directory
-  { "keys": ["command+space", "command+r", "command+r"], "command": "side_bar_delete" },
+  { "keys": ["super+space", "super+r", "super+r"], "command": "side_bar_delete" },
 ]
