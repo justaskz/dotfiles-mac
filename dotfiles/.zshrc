@@ -1,16 +1,16 @@
 #!/usr/bin/env zsh
 
 # Prevent duplicates in command history
-# setopt EXTENDED_HISTORY
-# setopt HIST_EXPIRE_DUPS_FIRST
-# setopt HIST_IGNORE_DUPS
-# setopt HIST_IGNORE_ALL_DUPS
-# setopt HIST_IGNORE_SPACE
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
-# setopt HIST_SAVE_NO_DUPS
-# setopt HIST_BEEP
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_BEEP
 
-ulimit -n 24000
+ulimit -n 20000
 
 # makes VIM work with ctrl
 stty -ixon -ixoff

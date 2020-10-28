@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+#!/usr/bin/env bash
+
+source recipes/helpers/install.sh
+
+function run {
+  exit_if_installed ${1:command}
+  install
+}
+
+function install_debian {
+  # installation commands
+}
+
+function install_osx {
+  # installation commands
+}
+
+run
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>qinstall</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.shell</scope>
+</snippet>

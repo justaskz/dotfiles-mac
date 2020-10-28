@@ -41,6 +41,7 @@ alias untar="tar xvzf"
 alias genv="env | grep"
 unalias ls >/dev/null 2>/dev/null
 alias ls="/usr/local/opt/coreutils/libexec/gnubin/ls -lah --color"
+alias python_server="python3 -m http.server"
 
 #################################################
 ## RAILS
@@ -121,10 +122,13 @@ function clear_histories {
   find $HOME/ -maxdepth 1 -type f | grep _history | xargs rm
 }
 
-function ssh-login-dzeus-ansible {
+function ssh-login-dzeus-user-ansible {
   ssh -A -t ansible@ansible.mountaininfra.net "cd /home/justas/repos/ansible; /bin/bash --rcfile /home/justas/.env"
 }
 
-function ssh-login-dzeus-justas {
+function ssh-login-dzeus-user-justas {
   ssh -A justas@ansible.mountaininfra.net
 }
+
+alias ssha="ssh-login-dzeus-user-ansible"
+alias sshj="ssh-login-dzeus-user-justas"

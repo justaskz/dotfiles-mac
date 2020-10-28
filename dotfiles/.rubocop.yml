@@ -4,10 +4,10 @@ AllCops:
     - 'spec/fixtures/**/*'
     - 'tmp/**/*'
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
-LineLength:
+Layout/LineLength:
   Max: 99
 
 Style/ClassAndModuleChildren:

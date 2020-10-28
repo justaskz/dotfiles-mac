@@ -30,12 +30,12 @@
 		"*.pyc",
 		"*.cache",
 		".tags*",
-		"tags",
 		"*.js.map",
 		"*.scssc",
 		"*.rdb",
 		"*.svg",
-		"*package-lock.json*"
+		"*package-lock.json*",
+		"*vault*"
 	],
 	"folder_exclude_patterns":
 	[
@@ -57,7 +57,7 @@
 		"_history"
 	],
 	"font_face": "Courier New",
-	"font_size": 16,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -85,7 +85,7 @@
 	"show_git_status": false,
 	"show_panel_on_build": false,
 	"tab_size": 2,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,

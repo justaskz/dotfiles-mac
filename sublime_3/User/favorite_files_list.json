@@ -63,16 +63,16 @@
     // NOTES
     //-----------------------------------------------
     {
-      "alias": "cli",
-      "file": "/Users/justas/repos/notes/dev/cli"
-    },
-    {
       "alias": "unix",
       "file": "/Users/justas/repos/notes/dev/unix"
     },
     {
       "alias": "bash",
       "file": "/Users/justas/repos/notes/dev/bash"
+    },
+    {
+      "alias": "apt",
+      "file": "/Users/justas/repos/notes/dev/apt"
     },
     {
       "alias": "git",
@@ -113,6 +113,10 @@
     {
       "alias": "galera",
       "file": "/Users/justas/repos/notes/dev/galera",
+    },
+    {
+      "alias": "infosec",
+      "file": "/Users/justas/repos/notes/dev/infosec",
     },
   ],
   "groups": {},
