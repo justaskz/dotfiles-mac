@@ -1,8 +1,14 @@
 <snippet>
   <content><![CDATA[
-include LeanInteractor
+class ${1:ClassName}
+  include LeanInteractor
 
-initialize_for ${1:some_thing}
+  initialize_for :${2:parameter}
+
+  def run
+    # ${3:code}
+  end
+end
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>qlean_interactor</tabTrigger>

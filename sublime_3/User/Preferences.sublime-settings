@@ -20,7 +20,7 @@
 		"core/db/migrates/*.rb"
 	],
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Color Scheme - Legacy/Dawn.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Bliss (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -57,7 +57,7 @@
 		"_history"
 	],
 	"font_face": "Courier New",
-	"font_size": 15,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -85,7 +85,7 @@
 	"show_git_status": false,
 	"show_panel_on_build": false,
 	"tab_size": 2,
-	"theme": "Soda Light 3.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,

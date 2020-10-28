@@ -3,22 +3,26 @@
   // CURSOR CONTROLS
   //-----------------------------------------------
 
-  // COMMAND
-  // Scroll up and down
+  // SUPER
+  // scroll up and down
   { "keys": ["super+up"], "command": "scroll_lines", "args": { "amount": 1.0 }},
   { "keys": ["super+down"], "command": "scroll_lines", "args": { "amount": -1.0 }},
-  // Jump through words
+  // jump through words
   { "keys": ["super+left"], "command": "move", "args": { "by": "subwords", "forward": false }},
   { "keys": ["super+right"], "command": "move", "args": { "by": "subwords", "forward": true }},
+  // delete word
+  { "keys": ["super+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
 
 
   // ALT
-  // Move lines up and down
+  // move lines up and down
   { "keys": ["alt+up"], "command": "swap_line_up" },
   { "keys": ["alt+down"], "command": "swap_line_down" },
-  // Move cursor to start or end of the line
+  // move to start or end of the line
   { "keys": ["alt+left"], "command": "move_to", "args": { "to": "bol", "extend": false }},
   { "keys": ["alt+right"], "command": "move_to", "args": { "to": "eol", "extend": false }},
+  // delete line
+  { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
 
 
   // SHIFT
@@ -28,12 +32,12 @@
   // [Shift+left|right]: Works by default
 
 
-  // COMMAND + SHIFT
-  // Select between brackets
+  // SUPER + SHIFT
+  // select between brackets
   { "keys": ["super+shift+up"], "command": "expand_selection", "args": { "to": "brackets" }},
-  // Select between commas
+  // select between commas
   { "keys": ["super+shift+down"], "command": "select_quoted" },
-  // Select a word
+  // select a word
   { "keys": ["super+shift+left"], "command": "move", "args": {
       "by": "words", "forward": false, "extend": true }},
   { "keys": ["super+shift+right"], "command": "move", "args": {
@@ -41,10 +45,10 @@
 
 
   // ALT + SHIFT
-  // Expand multiple cursors up and down
+  // expand multiple cursors up and down
   { "keys": ["alt+shift+up"], "command": "select_lines", "args": { "forward": false }},
   { "keys": ["alt+shift+down"], "command": "select_lines", "args": { "forward": true }},
-  // Select whole line
+  // select whole line
   { "keys": ["alt+shift+left"], "command": "move_to", "args": { "to": "bol", "extend": true }},
   { "keys": ["alt+shift+right"], "command": "move_to", "args": { "to": "eol", "extend": true }},
 
@@ -52,46 +56,46 @@
   // VIM STYLE
   //-----------------------------------------------
 
-  // Move cursor
+  // move cursor
   { "keys": ["ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false }},
   { "keys": ["ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true }},
   { "keys": ["ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false }},
   { "keys": ["ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true }},
 
-  // Scroll up and down
+  // scroll up and down
   { "keys": ["super+ctrl+k"], "command": "scroll_lines", "args": { "amount": 1.0 }},
   { "keys": ["super+ctrl+j"], "command": "scroll_lines", "args": { "amount": -1.0 }},
 
-  // Jump through words
+  // jump through words
   { "keys": ["super+ctrl+h"], "command": "move", "args": { "by": "subwords", "forward": false }},
   { "keys": ["super+ctrl+l"], "command": "move", "args": { "by": "subwords", "forward": true }},
 
-  // Move lines up and down
+  // move lines up and down
   { "keys": ["alt+ctrl+k"], "command": "swap_line_up" },
   { "keys": ["alt+ctrl+j"], "command": "swap_line_down" },
 
-  // Move cursor to start or end of the line
+  // move cursor to start or end of the line
   { "keys": ["alt+ctrl+h"], "command": "move_to", "args": { "to": "bol", "extend": false }},
   { "keys": ["alt+ctrl+l"], "command": "move_to", "args": { "to": "eol", "extend": false }},
 
-  // Select a line
+  // select a line
   { "keys": ["shift+ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false, "extend": true }},
   { "keys": ["shift+ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true, "extend": true }},
 
-  // Select character
+  // select character
   { "keys": ["shift+ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false, "extend": true }},
   { "keys": ["shift+ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true, "extend": true }},
 
-  // Select between brackets
+  // select between brackets
   { "keys": ["super+shift+ctrl+k"], "command": "expand_selection", "args": { "to": "brackets" }},
   // Select between commas
   { "keys": ["super+shift+ctrl+j"], "command": "select_quoted" },
 
-  // Expand multiple cursors up and down
+  // expand multiple cursors up and down
   { "keys": ["alt+shift+ctrl+k"], "command": "select_lines", "args": { "forward": false }},
   { "keys": ["alt+shift+ctrl+j"], "command": "select_lines", "args": { "forward": true }},
 
-  // Select whole line
+  // select whole line
   { "keys": ["alt+shift+ctrl+h"], "command": "move_to", "args": { "to": "bol", "extend": true }},
   { "keys": ["alt+shift+ctrl+l"], "command": "move_to", "args": { "to": "eol", "extend": true }},
 
@@ -99,27 +103,27 @@
   // OTHER
   //-----------------------------------------------
 
-  // New line
+  // new line
   { "keys": ["super+enter"], "command": "run_macro_file",
     "args": { "file": "res://Packages/Default/Add Line.sublime-macro" }},
-  // Copy file path to clipboard
+  // copy file path to clipboard
   { "keys": ["super+space", "super+c"], "command": "copy_path" },
-  // Select a line
+  // select a line
   { "keys": ["super+e"], "command": "expand_selection", "args": { "to": "line" }},
 
-  // Go to document start
+  // go to document start
   { "keys": ["super+space", "super+up"], "command": "move_to", "args": { "to": "bof", "extend": false }},
-  // Go to document end
+  // go to document end
   { "keys": ["super+space", "super+down"], "command": "move_to", "args": { "to": "eof", "extend": false }},
-  // Go to line
+  // go to line
   { "keys": ["super+g"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" }},
-  // Right delete
+  // right delete
   { "keys": ["ctrl+backspace"], "command": "right_delete" },
-  // Right delete word
+  // right delete word
   { "keys": ["alt+shift+backspace"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
-  // Go to definition
+  // go to definition
   { "keys": ["super+space", "super+t", "super+t"], "command": "goto_definition" },
-  // Go to search result
+  // go to search result
   { "keys": ["super+space", "super+g"], "command": "prev_result" },
 
   //-----------------------------------------------
@@ -128,11 +132,11 @@
   //
   //-----------------------------------------------
 
-  // Open favorite files list
+  // open favorite files list
   { "keys": ["super+space", "super+f"], "command": "favorite_files_open" },
-  // Send to Terminal
+  // send to Terminal
   { "keys": ["super+\\"], "command": "send_code" },
-  // Show in sidebar
+  // show in sidebar
   { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
 
   { "keys": ["super+shift+["], "command": "do_end_to_brace" },
@@ -142,24 +146,24 @@
   // SIDEBAR
   //-----------------------------------------------
 
-  // Disable open file
+  // disable open file
   { "keys": ["super+o"], "command": "false" },
-  // Disable quiting
+  // disable quiting
   { "keys": ["super+q"], "command": "false" },
-  // Toogle sidebar
+  // toogle sidebar
   { "keys": ["super+space", "super+o"], "command": "toggle_side_bar" },
-  // Focus sidebar
+  // focus sidebar
   { "keys": ["super+space", "super+d"], "command": "focus_side_bar" },
-  // Focus text
+  // focus text
   { "keys": ["super+space", "super+d", "super+f"], "command": "focus_group", "args": { "group": 0 }},
-  // Clear sidebar
+  // clear sidebar
   { "keys": ["super+space", "super+s", "super+c"], "command": "close_folder_list" },
-  // Create new directory
+  // create new directory
   { "keys": ["super+space", "super+n", "super+d"], "command": "side_bar_new_directory" },
-  // Create new file
+  // create new file
   { "keys": ["super+space", "super+n", "super+f"], "command": "side_bar_new_file" },
-  // Move
+  // move
   { "keys": ["super+space", "super+r", "super+e"], "command": "side_bar_move" },
-  // Delete file or directory
+  // delete file or directory
   { "keys": ["super+space", "super+r", "super+r"], "command": "side_bar_delete" },
 ]

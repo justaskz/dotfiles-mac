@@ -1,12 +1,18 @@
 [filter "lfs"]
-	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+	required = true
 [user]
 	name = Justas Kazakauskas
   email = justas.kazakauskas@gmail.com
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/t1028/.gitignore
 [includeIf "gitdir:/Users/t1028/repos/ansible/"]
   path = ~/.gitconfig-tesonet
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /private/var/folders/3z/xgv3j7xj259gjztyl4wkmwpr0000gn/T/AppTranslocation/E2782484-2A8F-4213-BBBB-2D155B519163/d/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

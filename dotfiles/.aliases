@@ -41,6 +41,7 @@ alias untar="tar xvzf"
 alias genv="env | grep"
 unalias ls >/dev/null 2>/dev/null
 alias ls="/usr/local/opt/coreutils/libexec/gnubin/ls -lah --color"
+alias python_server="python3 -m http.server"
 
 #################################################
 ## RAILS

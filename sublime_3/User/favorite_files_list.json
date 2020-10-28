@@ -114,6 +114,10 @@
       "alias": "galera",
       "file": "/Users/justas/repos/notes/dev/galera",
     },
+    {
+      "alias": "infosec",
+      "file": "/Users/justas/repos/notes/dev/infosec",
+    },
   ],
   "groups": {},
   "version": 2
